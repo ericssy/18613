@@ -1,0 +1,1000 @@
+S 602264,1 miss
+L 602260,4 miss eviction
+L 60225c,4 miss
+L 602400,8 miss
+S 7fefe05a8,8 miss
+S 7fefe05a0,8 hit
+S 7fefe058c,4 miss
+S 7fefe0588,4 hit
+S 7fefe0580,8 miss eviction
+S 7fefe0578,8 miss
+L 7fefe058c,4 miss eviction
+S 7fefe0570,4 hit
+L 7fefe0588,4 miss eviction
+S 7fefe0574,4 hit
+S 7fefe0590,4 miss eviction
+L 7fefe0590,4 miss eviction
+L 7fefe0588,4 miss eviction
+S 7fefe0594,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe0590,4 miss eviction
+S 7fefe0598,4 miss eviction
+L 7fefe0590,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0588,4 miss eviction
+L 7fefe0594,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff05c0,4 miss
+S 7fefe05b0,4 hit
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff05c4,4 hit
+S 7fefe07b0,4 miss
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff05c8,4 hit
+S 7fefe09b0,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff05cc,4 hit
+S 7fefe0bb0,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff05d0,4 hit
+S 7fefe0db0,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff05d4,4 hit
+S 7fefe0fb0,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff05d8,4 hit
+S 7fefe11b0,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff05dc,4 hit
+S 7fefe13b0,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0598,4 miss eviction
+S 7fefe0598,4 miss eviction
+L 7fefe0590,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0588,4 miss eviction
+L 7fefe0594,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff07c0,4 miss
+S 7fefe05b4,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff07c4,4 hit
+S 7fefe07b4,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff07c8,4 hit
+S 7fefe09b4,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff07cc,4 hit
+S 7fefe0bb4,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff07d0,4 hit
+S 7fefe0db4,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff07d4,4 hit
+S 7fefe0fb4,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff07d8,4 hit
+S 7fefe11b4,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff07dc,4 hit
+S 7fefe13b4,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0598,4 miss eviction
+S 7fefe0598,4 miss eviction
+L 7fefe0590,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0588,4 miss eviction
+L 7fefe0594,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff09c0,4 miss eviction
+S 7fefe05b8,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff09c4,4 hit
+S 7fefe07b8,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff09c8,4 hit
+S 7fefe09b8,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff09cc,4 hit
+S 7fefe0bb8,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff09d0,4 hit
+S 7fefe0db8,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff09d4,4 hit
+S 7fefe0fb8,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff09d8,4 hit
+S 7fefe11b8,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff09dc,4 hit
+S 7fefe13b8,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0598,4 miss eviction
+S 7fefe0598,4 miss eviction
+L 7fefe0590,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0588,4 miss eviction
+L 7fefe0594,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff0bc0,4 miss eviction
+S 7fefe05bc,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff0bc4,4 hit
+S 7fefe07bc,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff0bc8,4 hit
+S 7fefe09bc,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff0bcc,4 hit
+S 7fefe0bbc,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff0bd0,4 hit
+S 7fefe0dbc,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff0bd4,4 hit
+S 7fefe0fbc,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff0bd8,4 hit
+S 7fefe11bc,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff0bdc,4 hit
+S 7fefe13bc,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0598,4 miss eviction
+S 7fefe0598,4 miss eviction
+L 7fefe0590,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0594,4 miss eviction
+S 7fefe0594,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe0590,4 miss eviction
+S 7fefe0598,4 miss eviction
+L 7fefe0590,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0588,4 miss eviction
+L 7fefe0594,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff05e0,4 miss
+S 7fefe15b0,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff05e4,4 hit
+S 7fefe17b0,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff05e8,4 hit
+S 7fefe19b0,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff05ec,4 hit
+S 7fefe1bb0,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff05f0,4 hit
+S 7fefe1db0,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff05f4,4 hit
+S 7fefe1fb0,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff05f8,4 hit
+S 7fefe21b0,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff05fc,4 hit
+S 7fefe23b0,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0598,4 miss eviction
+S 7fefe0598,4 miss eviction
+L 7fefe0590,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0588,4 miss eviction
+L 7fefe0594,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff07e0,4 miss
+S 7fefe15b4,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff07e4,4 hit
+S 7fefe17b4,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff07e8,4 hit
+S 7fefe19b4,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff07ec,4 hit
+S 7fefe1bb4,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff07f0,4 hit
+S 7fefe1db4,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff07f4,4 hit
+S 7fefe1fb4,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff07f8,4 hit
+S 7fefe21b4,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff07fc,4 hit
+S 7fefe23b4,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0598,4 miss eviction
+S 7fefe0598,4 miss eviction
+L 7fefe0590,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0588,4 miss eviction
+L 7fefe0594,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff09e0,4 miss eviction
+S 7fefe15b8,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff09e4,4 hit
+S 7fefe17b8,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff09e8,4 hit
+S 7fefe19b8,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff09ec,4 hit
+S 7fefe1bb8,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff09f0,4 hit
+S 7fefe1db8,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff09f4,4 hit
+S 7fefe1fb8,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff09f8,4 hit
+S 7fefe21b8,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe058c,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0574,4 hit
+L 7fefe0578,8 hit
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0570,4 hit
+L 7fefe0580,8 miss eviction
+L 7fefe059c,4 miss eviction
+L 7feff09fc,4 hit
+S 7fefe23b8,4 miss eviction
+L 7fefe059c,4 miss eviction
+S 7fefe059c,4 miss eviction
+L 7fefe0594,4 miss eviction
+L 7fefe059c,4 miss eviction
+L 7fefe0598,4 miss eviction
+S 7fefe0598,4 miss eviction
+L 7fefe0590,4 miss eviction
+L 7fefe0598,4 miss eviction
+L 7fefe0598,4 miss eviction
+hits:222 misses:777 evictions:766 dirty_bytes_in_cache:96 dirty_bytes_evicted:4224

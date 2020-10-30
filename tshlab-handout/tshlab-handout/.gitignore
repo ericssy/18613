@@ -1,0 +1,9 @@
+*.o
+*~
+sdriver
+runtrace
+tsh
+
+# If key.txt is enabled
+handin.tar
+key.txt

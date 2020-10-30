@@ -1,0 +1,2693 @@
+Proxy set up at hammerheadshark.ics.cs.cmu.edu:17262
+># Test ability to evict multiple objects to make room for big ones
+>serve s1
+Server s1 running at hammerheadshark.ics.cs.cmu.edu:26047
+>generate little-text00.txt 10K
+>generate little-text01.txt 10K
+>generate little-text02.txt 10K
+>generate little-text03.txt 10K
+>generate little-text04.txt 10K
+>generate little-text05.txt 10K
+>generate little-text06.txt 10K
+>generate little-text07.txt 10K
+>generate little-text08.txt 10K
+>generate little-text09.txt 10K
+>generate big-text00.txt 100K
+>generate big-text01.txt 100K
+>generate big-text02.txt 100K
+>generate big-text03.txt 100K
+>generate big-text04.txt 100K
+>generate big-text05.txt 100K
+>generate big-text06.txt 100K
+>generate big-text07.txt 100K
+>generate big-text08.txt 100K
+>generate big-text09.txt 100K
+>generate big-text10.txt 100K
+># Use 100K of cache
+>fetch fl00 little-text00.txt s1
+Client: Fetching '/little-text00.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Initialize finished
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+>fetch fl01 little-text01.txt s1
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/little-text00.txt HTTP/1.0
+Proxy stderr: 
+Client: Fetching '/little-text01.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: fl00
+>fetch fl02 little-text02.txt s1
+Client: Fetching '/little-text02.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Response: Immediate
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+>fetch fl03 little-text03.txt s1
+Client: Fetching '/little-text03.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: 
+Proxy stderr:  print Request GET /little-text00.txt HTTP/1.0
+>fetch fl04 little-text04.txt s1
+Client: Fetching '/little-text04.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fl00
+Proxy stderr: Response: Immediate
+>fetch fl05 little-text05.txt s1
+Client: Fetching '/little-text05.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+>fetch fl06 little-text06.txt s1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Client: Fetching '/little-text06.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr:  buf get GET /little-text00.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text00.txt
+Proxy stderr: clientfd: 7
+Proxy stderr: 
+Proxy stderr:  Request GET /little-text00.txt HTTP/1.0
+>fetch fl07 little-text07.txt s1
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fl00
+Client: Fetching '/little-text07.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+>fetch fl08 little-text08.txt s1
+Proxy stderr: 
+Proxy stderr:  n: 248
+Client: Fetching '/little-text08.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: WRITE HTTP/1.0 200 OK
+Proxy stderr: WRITE Server: Proxylab driver
+>fetch fl09 little-text09.txt s1
+Proxy stderr: WRITE Request-ID: fl00
+Client: Fetching '/little-text09.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: WRITE Content-length: 10000
+Proxy stderr: content length found Content-length: 10000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text00.txt
+>wait *
+Proxy stderr: 
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: WRITE Content-type: text/plain
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/little-text01.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr:  WRITE Content-Identifier: s1-/little-text00.txt
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: fl01
+Proxy stderr: DEBUG: Response: Immediate
+Proxy stderr: WRITE Sequence-Identifier: 1
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /little-text01.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fl01
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /little-text01.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text01.txt
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 10000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text00.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text00.txt content length 10000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text00.txt TEST0
+Proxy stderr: clientfd: 9
+Proxy stderr: 
+Proxy stderr:  Request GET /little-text01.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fl01
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 248
+Proxy stderr: 
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: WRITE HTTP/1.0 200 OK
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text00.txt  READNB n 10000
+Proxy stderr: WRITE Request-ID: fl01
+Proxy stderr: WRITE Content-length: 10000
+Proxy stderr: content length found Content-length: 10000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text01.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text00.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text00.txt
+Proxy stderr:  WRITE Content-type: text/plain
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 10178, key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text00.txt
+Proxy stderr:  total size before add: 0
+Proxy stderr: current cache size before add 0, http://hammerheadshark.ics.cs.cmu.edu:26047/little-text00.txt
+Proxy stderr: WRITE Content-Identifier: s1-/little-text01.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text00.txt
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/little-text02.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr:  WRITE Sequence-Identifier: 2
+Proxy stderr: WRITE
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: content length str Content-length: 10000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text01.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text01.txt content length 10000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text01.txt TEST0
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: fl02
+Proxy stderr: DEBUG: Response: Immediate
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /little-text02.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fl02
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /little-text02.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text02.txt
+Proxy stderr: clientfd: 4
+Proxy stderr: 
+Proxy stderr:  Request GET /little-text02.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fl02
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 248
+Proxy stderr: 
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/little-text03.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: fl03
+Proxy stderr: DEBUG: Response: Immediate
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /little-text03.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fl03
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /little-text03.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text03.txt
+Proxy stderr: clientfd: 11
+Proxy stderr: 
+Proxy stderr:  Request GET /little-text03.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fl03
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 248
+Proxy stderr: 
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/little-text04.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: fl04
+Proxy stderr: DEBUG: Response: Immediate
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /little-text04.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fl04
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /little-text04.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text04.txt
+Proxy stderr: clientfd: 13
+Proxy stderr: 
+Proxy stderr:  Request GET /little-text04.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fl04
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 248
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text01.txt  READNB n 10000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text01.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text01.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 10178, key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text01.txt
+Proxy stderr:  total size before add: 10178
+Proxy stderr: current cache size before add 10178, http://hammerheadshark.ics.cs.cmu.edu:26047/little-text01.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text01.txt
+Proxy stderr: WRITE HTTP/1.0 200 OK
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: WRITE Request-ID: fl02
+Proxy stderr: WRITE Content-length: 10000
+Proxy stderr: content length found Content-length: 10000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text02.txt
+Proxy stderr: WRITE Content-type: text/plain
+Proxy stderr: WRITE Content-Identifier: s1-/little-text02.txt
+Proxy stderr: WRITE Sequence-Identifier: 3
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 10000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text02.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text02.txt content length 10000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text02.txt TEST0
+Proxy stderr: 
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/little-text05.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: fl05
+Proxy stderr: DEBUG: Response: Immediate
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /little-text05.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fl05
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /little-text05.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text05.txt
+Proxy stderr: clientfd: 9
+Proxy stderr: 
+Proxy stderr:  Request GET /little-text05.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fl05
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 248
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text02.txt  READNB n 10000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text02.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text02.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 10178, key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text02.txt
+Proxy stderr:  total size before add: 20356
+Proxy stderr: current cache size before add 20356, http://hammerheadshark.ics.cs.cmu.edu:26047/little-text02.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text02.txt
+Proxy stderr: WRITE HTTP/1.0 200 OK
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: WRITE Request-ID: fl03
+Proxy stderr: WRITE Content-length: 10000
+Proxy stderr: content length found Content-length: 10000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text03.txt
+Proxy stderr: WRITE Content-type: text/plain
+Proxy stderr: WRITE Content-Identifier: s1-/little-text03.txt
+Proxy stderr: WRITE Sequence-Identifier: 4
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 10000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text03.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text03.txt content length 10000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text03.txt TEST0
+Proxy stderr: 
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/little-text06.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: fl06
+Proxy stderr: DEBUG: Response: Immediate
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /little-text06.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fl06
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /little-text06.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text06.txt
+Proxy stderr: clientfd: 8
+Proxy stderr: 
+Proxy stderr:  Request GET /little-text06.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fl06
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 248
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text03.txt  READNB n 10000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text03.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text03.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 10178, key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text03.txt
+Proxy stderr:  total size before add: 30534
+Proxy stderr: current cache size before add 30534, http://hammerheadshark.ics.cs.cmu.edu:26047/little-text03.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text03.txt
+Proxy stderr: 
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/little-text07.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: fl07
+Proxy stderr: DEBUG: Response: Immediate
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /little-text07.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fl07
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /little-text07.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text07.txt
+Proxy stderr: clientfd: 11
+Proxy stderr: 
+Proxy stderr:  Request GET /little-text07.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fl07
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 248
+Proxy stderr: WRITE HTTP/1.0 200 OK
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: WRITE Request-ID: fl04
+Proxy stderr: WRITE Content-length: 10000
+Proxy stderr: content length found Content-length: 10000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text04.txt
+Proxy stderr: WRITE Content-type: text/plain
+Proxy stderr: WRITE Content-Identifier: s1-/little-text04.txt
+Proxy stderr: WRITE Sequence-Identifier: 5
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 10000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text04.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text04.txt content length 10000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text04.txt TEST0
+Proxy stderr: WRITE HTTP/1.0 200 OK
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: WRITE Request-ID: fl06
+Proxy stderr: WRITE Content-length: 10000
+Proxy stderr: content length found Content-length: 10000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text06.txt
+Proxy stderr: WRITE Content-type: text/plain
+Proxy stderr: WRITE Content-Identifier: s1-/little-text06.txt
+Proxy stderr: WRITE Sequence-Identifier: 6
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 10000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text06.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text06.txt content length 10000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text06.txt TEST0
+Proxy stderr: WRITE HTTP/1.0 200 OK
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: WRITE Request-ID: fl07
+Proxy stderr: WRITE Content-length: 10000
+Proxy stderr: content length found Content-length: 10000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text07.txt
+Proxy stderr: WRITE Content-type: text/plain
+Proxy stderr: WRITE Content-Identifier: s1-/little-text07.txt
+Proxy stderr: WRITE Sequence-Identifier: 7
+Proxy stderr: 
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 10000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text07.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text07.txt content length 10000
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/little-text08.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr:  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text07.txt TEST0
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: fl08
+Proxy stderr: DEBUG: Response: Immediate
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /little-text08.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fl08
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /little-text08.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text08.txt
+Proxy stderr: clientfd: 15
+Proxy stderr: 
+Proxy stderr:  Request GET /little-text08.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fl08
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 248
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text04.txt  READNB n 10000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text04.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text04.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 10178, key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text04.txt
+Proxy stderr:  total size before add: 40712
+Proxy stderr: current cache size before add 40712, http://hammerheadshark.ics.cs.cmu.edu:26047/little-text04.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text04.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text06.txt  READNB n 10000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text06.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text06.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 10178, key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text06.txt
+Proxy stderr:  total size before add: 50890
+Proxy stderr: current cache size before add 50890, http://hammerheadshark.ics.cs.cmu.edu:26047/little-text06.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text06.txt
+Proxy stderr: 
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/little-text09.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: fl09
+Proxy stderr: DEBUG: Response: Immediate
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text07.txt  READNB n 10000
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /little-text09.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fl09
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /little-text09.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text09.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text07.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text07.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 10178, key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text07.txt
+Proxy stderr:  total size before add: 61068
+Proxy stderr: current cache size before add 61068, http://hammerheadshark.ics.cs.cmu.edu:26047/little-text07.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text07.txt
+Proxy stderr: clientfd: 7
+Proxy stderr: 
+Proxy stderr:  Request GET /little-text09.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fl09
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 248
+Proxy stderr: WRITE HTTP/1.0 200 OK
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: WRITE Request-ID: fl08
+Proxy stderr: WRITE Content-length: 10000
+Proxy stderr: content length found Content-length: 10000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text08.txt
+Proxy stderr: WRITE Content-type: text/plain
+Proxy stderr: WRITE Content-Identifier: s1-/little-text08.txt
+Proxy stderr: WRITE Sequence-Identifier: 8
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 10000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text08.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text08.txt content length 10000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text08.txt TEST0
+Proxy stderr: WRITE HTTP/1.0 200 OK
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: WRITE Request-ID: fl09
+Proxy stderr: WRITE Content-length: 10000
+Proxy stderr: content length found Content-length: 10000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text09.txt
+Proxy stderr: WRITE Content-type: text/plain
+Proxy stderr: WRITE Content-Identifier: s1-/little-text09.txt
+Proxy stderr: WRITE Sequence-Identifier: 9
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 10000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text09.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text09.txt content length 10000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text09.txt TEST0
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text08.txt  READNB n 10000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text08.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text08.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 10178, key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text08.txt
+Proxy stderr:  total size before add: 71246
+Proxy stderr: current cache size before add 71246, http://hammerheadshark.ics.cs.cmu.edu:26047/little-text08.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text08.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text09.txt  READNB n 10000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text09.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text09.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 10178, key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text09.txt
+Proxy stderr:  total size before add: 81424
+Proxy stderr: current cache size before add 81424, http://hammerheadshark.ics.cs.cmu.edu:26047/little-text09.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text09.txt
+Proxy stderr: WRITE HTTP/1.0 200 OK
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: WRITE Request-ID: fl05
+Proxy stderr: WRITE Content-length: 10000
+Proxy stderr: content length found Content-length: 10000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text05.txt
+Proxy stderr: WRITE Content-type: text/plain
+Proxy stderr: WRITE Content-Identifier: s1-/little-text05.txt
+Proxy stderr: WRITE Sequence-Identifier: 10
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 10000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text05.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text05.txt content length 10000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text05.txt TEST0
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text05.txt  READNB n 10000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text05.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text05.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 10179, key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text05.txt
+Proxy stderr:  total size before add: 91602
+Proxy stderr: current cache size before add 91602, http://hammerheadshark.ics.cs.cmu.edu:26047/little-text05.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text05.txt
+>check fl00
+Request fl00 yielded expected status 'ok'
+>check fl01
+Request fl01 yielded expected status 'ok'
+>check fl02
+Request fl02 yielded expected status 'ok'
+>check fl03
+Request fl03 yielded expected status 'ok'
+>check fl04
+Request fl04 yielded expected status 'ok'
+>check fl05
+Request fl05 yielded expected status 'ok'
+>check fl06
+Request fl06 yielded expected status 'ok'
+>check fl07
+Request fl07 yielded expected status 'ok'
+>check fl08
+Request fl08 yielded expected status 'ok'
+>check fl09
+Request fl09 yielded expected status 'ok'
+># Use another 200K of cache
+>fetch fb00 big-text00.txt s1
+Client: Fetching '/big-text00.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: 
+Proxy stderr:  ------------- NEW request ---------------
+>fetch fb01 big-text01.txt s1
+Client: Fetching '/big-text01.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/big-text00.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+>wait *
+Proxy stderr: DEBUG: Request-ID: fb00
+Proxy stderr: DEBUG: Response: Immediate
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /big-text00.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fb00
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /big-text00.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text00.txt
+Proxy stderr: clientfd: 7
+Proxy stderr: 
+Proxy stderr:  Request GET /big-text00.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fb00
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 245
+Proxy stderr: 
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/big-text01.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: fb01
+Proxy stderr: DEBUG: Response: Immediate
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /big-text01.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fb01
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /big-text01.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text01.txt
+Proxy stderr: clientfd: 9
+Proxy stderr: 
+Proxy stderr:  Request GET /big-text01.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fb01
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 245
+Proxy stderr: WRITE HTTP/1.0 200 OK
+Proxy stderr: WRITE HTTP/1.0 200 OK
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: WRITE Request-ID: fb01
+Proxy stderr: WRITE Request-ID: fb00
+Proxy stderr: WRITE Content-length: 100000
+Proxy stderr: content length found Content-length: 100000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text01.txt
+Proxy stderr: WRITE Content-length: 100000
+Proxy stderr: content length found Content-length: 100000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text00.txt
+Proxy stderr: WRITE Content-type: text/plain
+Proxy stderr: WRITE Content-type: text/plain
+Proxy stderr: WRITE Content-Identifier: s1-/big-text01.txt
+Proxy stderr: WRITE Content-Identifier: s1-/big-text00.txt
+Proxy stderr: WRITE Sequence-Identifier: 12
+Proxy stderr: WRITE Sequence-Identifier: 11
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 100000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text00.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text00.txt content length 100000
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 100000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text01.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text01.txt content length 100000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text00.txt TEST0
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text01.txt TEST0
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text00.txt  READNB n 100000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text01.txt  READNB n 100000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text01.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text01.txt
+Proxy stderr:  key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text00.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text00.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 100177, key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text01.txt
+Proxy stderr:  total size before add: 101781
+Proxy stderr: current cache size before add 101781, http://hammerheadshark.ics.cs.cmu.edu:26047/big-text01.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text01.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 100177, key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text00.txt
+Proxy stderr:  total size before add: 201958
+Proxy stderr: current cache size before add 201958, http://hammerheadshark.ics.cs.cmu.edu:26047/big-text00.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text00.txt
+># Use another 700K to fill up cache
+>fetch fb02 big-text02.txt s1
+Client: Fetching '/big-text02.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: 
+>fetch fb03 big-text03.txt s1
+Client: Fetching '/big-text03.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/big-text02.txt HTTP/1.0
+Proxy stderr: 
+>fetch fb04 big-text04.txt s1
+Client: Fetching '/big-text04.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: fb02
+>fetch fb05 big-text05.txt s1
+Client: Fetching '/big-text05.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Response: Immediate
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+>fetch fb06 big-text06.txt s1
+Client: Fetching '/big-text06.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr:  print Request GET /big-text02.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fb02
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+>fetch fb07 big-text07.txt s1
+Client: Fetching '/big-text07.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+>fetch fb08 big-text08.txt s1
+Client: Fetching '/big-text08.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: 
+Proxy stderr:  buf get GET /big-text02.txt HTTP/1.0
+>wait *
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text02.txt
+Proxy stderr: clientfd: 6
+Proxy stderr: 
+Proxy stderr:  Request GET /big-text02.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fb02
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 245
+Proxy stderr: 
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/big-text03.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: fb03
+Proxy stderr: DEBUG: Response: Immediate
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /big-text03.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fb03
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /big-text03.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text03.txt
+Proxy stderr: clientfd: 9
+Proxy stderr: 
+Proxy stderr:  Request GET /big-text03.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fb03
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 245
+Proxy stderr: 
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/big-text04.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: fb04
+Proxy stderr: DEBUG: Response: Immediate
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /big-text04.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fb04
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /big-text04.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text04.txt
+Proxy stderr: clientfd: 11
+Proxy stderr: 
+Proxy stderr:  Request GET /big-text04.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fb04
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 245
+Proxy stderr: WRITE HTTP/1.0 200 OK
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: WRITE Request-ID: fb02
+Proxy stderr: WRITE Content-length: 100000
+Proxy stderr: content length found Content-length: 100000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text02.txt
+Proxy stderr: WRITE Content-type: text/plain
+Proxy stderr: WRITE Content-Identifier: s1-/big-text02.txt
+Proxy stderr: WRITE Sequence-Identifier: 13
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 100000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text02.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text02.txt content length 100000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text02.txt TEST0
+Proxy stderr: WRITE HTTP/1.0 200 OK
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: WRITE Request-ID: fb03
+Proxy stderr: WRITE Content-length: 100000
+Proxy stderr: content length found Content-length: 100000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text03.txt
+Proxy stderr: WRITE Content-type: text/plain
+Proxy stderr: WRITE Content-Identifier: s1-/big-text03.txt
+Proxy stderr: WRITE Sequence-Identifier: 14
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 100000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text03.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text03.txt content length 100000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text03.txt TEST0
+Proxy stderr: 
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/big-text05.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: fb05
+Proxy stderr: DEBUG: Response: Immediate
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /big-text05.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fb05
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /big-text05.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text05.txt
+Proxy stderr: clientfd: 13
+Proxy stderr: 
+Proxy stderr:  Request GET /big-text05.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fb05
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 245
+Proxy stderr: WRITE HTTP/1.0 200 OK
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: WRITE Request-ID: fb04
+Proxy stderr: WRITE Content-length: 100000
+Proxy stderr: content length found Content-length: 100000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text04.txt
+Proxy stderr: WRITE Content-type: text/plain
+Proxy stderr: WRITE Content-Identifier: s1-/big-text04.txt
+Proxy stderr: WRITE Sequence-Identifier: 15
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 100000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text04.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text04.txt content length 100000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text04.txt TEST0
+Proxy stderr: WRITE HTTP/1.0 200 OK
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: WRITE Request-ID: fb05
+Proxy stderr: WRITE Content-length: 100000
+Proxy stderr: content length found Content-length: 100000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text05.txt
+Proxy stderr: WRITE Content-type: text/plain
+Proxy stderr: WRITE Content-Identifier: s1-/big-text05.txt
+Proxy stderr: WRITE Sequence-Identifier: 16
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 100000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text05.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text05.txt content length 100000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text05.txt TEST0
+Proxy stderr: 
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/big-text06.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: fb06
+Proxy stderr: DEBUG: Response: Immediate
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /big-text06.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fb06
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /big-text06.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text06.txt
+Proxy stderr: clientfd: 15
+Proxy stderr: 
+Proxy stderr:  Request GET /big-text06.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fb06
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 245
+Proxy stderr: 
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/big-text07.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: fb07
+Proxy stderr: DEBUG: Response: Immediate
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /big-text07.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fb07
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /big-text07.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text07.txt
+Proxy stderr: clientfd: 17
+Proxy stderr: 
+Proxy stderr:  Request GET /big-text07.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fb07
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 245
+Proxy stderr: WRITE HTTP/1.0 200 OK
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: WRITE Request-ID: fb06
+Proxy stderr: WRITE Content-length: 100000
+Proxy stderr: content length found Content-length: 100000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text06.txt
+Proxy stderr: WRITE Content-type: text/plain
+Proxy stderr: WRITE Content-Identifier: s1-/big-text06.txt
+Proxy stderr: WRITE Sequence-Identifier: 17
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 100000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text06.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text06.txt content length 100000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text06.txt TEST0
+Proxy stderr: 
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/big-text08.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: fb08
+Proxy stderr: DEBUG: Response: Immediate
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /big-text08.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fb08
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /big-text08.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text08.txt
+Proxy stderr: clientfd: 19
+Proxy stderr: 
+Proxy stderr:  Request GET /big-text08.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fb08
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 245
+Proxy stderr: WRITE HTTP/1.0 200 OK
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: WRITE Request-ID: fb07
+Proxy stderr: WRITE Content-length: 100000
+Proxy stderr: content length found Content-length: 100000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text07.txt
+Proxy stderr: WRITE Content-type: text/plain
+Proxy stderr: WRITE Content-Identifier: s1-/big-text07.txt
+Proxy stderr: WRITE Sequence-Identifier: 18
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 100000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text07.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text07.txt content length 100000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text07.txt TEST0
+Proxy stderr: WRITE HTTP/1.0 200 OK
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: WRITE Request-ID: fb08
+Proxy stderr: WRITE Content-length: 100000
+Proxy stderr: content length found Content-length: 100000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text08.txt
+Proxy stderr: WRITE Content-type: text/plain
+Proxy stderr: WRITE Content-Identifier: s1-/big-text08.txt
+Proxy stderr: WRITE Sequence-Identifier: 19
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 100000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text08.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text08.txt content length 100000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text08.txt TEST0
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text02.txt  READNB n 100000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text02.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text02.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 100177, key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text02.txt
+Proxy stderr:  total size before add: 302135
+Proxy stderr: current cache size before add 302135, http://hammerheadshark.ics.cs.cmu.edu:26047/big-text02.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text02.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text04.txt  READNB n 100000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text04.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text04.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 100177, key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text04.txt
+Proxy stderr:  total size before add: 402312
+Proxy stderr: current cache size before add 402312, http://hammerheadshark.ics.cs.cmu.edu:26047/big-text04.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text04.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text05.txt  READNB n 100000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text05.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text05.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 100177, key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text05.txt
+Proxy stderr:  total size before add: 502489
+Proxy stderr: current cache size before add 502489, http://hammerheadshark.ics.cs.cmu.edu:26047/big-text05.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text05.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text03.txt  READNB n 100000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text03.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text03.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 100177, key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text03.txt
+Proxy stderr:  total size before add: 602666
+Proxy stderr: current cache size before add 602666, http://hammerheadshark.ics.cs.cmu.edu:26047/big-text03.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text03.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text06.txt  READNB n 100000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text06.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text06.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 100177, key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text06.txt
+Proxy stderr:  total size before add: 702843
+Proxy stderr: current cache size before add 702843, http://hammerheadshark.ics.cs.cmu.edu:26047/big-text06.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text07.txt  READNB n 100000
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text06.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text07.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text07.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 100177, key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text07.txt
+Proxy stderr:  total size before add: 803020
+Proxy stderr: current cache size before add 803020, http://hammerheadshark.ics.cs.cmu.edu:26047/big-text07.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text07.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text08.txt  READNB n 100000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text08.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text08.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 100177, key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text08.txt
+Proxy stderr:  total size before add: 903197
+Proxy stderr: current cache size before add 903197, http://hammerheadshark.ics.cs.cmu.edu:26047/big-text08.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text08.txt
+># These should evict the little entries
+>fetch fb09 big-text09.txt s1
+Client: Fetching '/big-text09.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: 
+>fetch fb10 big-text10.txt s1
+Proxy stderr:  ------------- NEW request ---------------
+Client: Fetching '/big-text10.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/big-text09.txt HTTP/1.0
+Proxy stderr: 
+>wait *
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: fb09
+Proxy stderr: DEBUG: Response: Immediate
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /big-text09.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fb09
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /big-text09.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text09.txt
+Proxy stderr: clientfd: 6
+Proxy stderr: 
+Proxy stderr:  Request GET /big-text09.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fb09
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 245
+Proxy stderr: 
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/big-text10.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: fb10
+Proxy stderr: DEBUG: Response: Immediate
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /big-text10.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fb10
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /big-text10.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text10.txt
+Proxy stderr: clientfd: 8
+Proxy stderr: 
+Proxy stderr:  Request GET /big-text10.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: fb10
+Proxy stderr: Response: Immediate
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 245
+Proxy stderr: WRITE HTTP/1.0 200 OK
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: WRITE Request-ID: fb09
+Proxy stderr: WRITE Content-length: 100000
+Proxy stderr: content length found Content-length: 100000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text09.txt
+Proxy stderr: WRITE Content-type: text/plain
+Proxy stderr: WRITE Content-Identifier: s1-/big-text09.txt
+Proxy stderr: WRITE Sequence-Identifier: 20
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 100000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text09.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text09.txt content length 100000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text09.txt TEST0
+Proxy stderr: WRITE HTTP/1.0 200 OK
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: WRITE Request-ID: fb10
+Proxy stderr: WRITE Content-length: 100000
+Proxy stderr: content length found Content-length: 100000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text10.txt
+Proxy stderr: WRITE Content-type: text/plain
+Proxy stderr: WRITE Content-Identifier: s1-/big-text10.txt
+Proxy stderr: WRITE Sequence-Identifier: 21
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 100000
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text10.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text10.txt content length 100000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text10.txt TEST0
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text09.txt  READNB n 100000
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text09.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text09.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 100177, key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text09.txt
+Proxy stderr:  total size before add: 1003374
+Proxy stderr: current cache size before add 1003374, http://hammerheadshark.ics.cs.cmu.edu:26047/big-text09.txt
+Proxy stderr: cache full 1003374, http://hammerheadshark.ics.cs.cmu.edu:26047/big-text09.txt
+Proxy stderr: compare 18, 2147483647
+Proxy stderr: compare 17, 18
+Proxy stderr: compare 16, 17
+Proxy stderr: compare 15, 16
+Proxy stderr: compare 14, 15
+Proxy stderr: compare 13, 14
+Proxy stderr: compare 12, 13
+Proxy stderr: compare 11, 12
+Proxy stderr: compare 10, 11
+Proxy stderr: compare 9, 10
+Proxy stderr: compare 8, 9
+Proxy stderr: compare 7, 8
+Proxy stderr: compare 6, 7
+Proxy stderr: compare 5, 6
+Proxy stderr: compare 4, 5
+Proxy stderr: compare 3, 4
+Proxy stderr: compare 2, 3
+Proxy stderr: compare 1, 2
+Proxy stderr: compare 0, 1
+Proxy stderr: EVICT: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text00.txt
+Proxy stderr: EVICT FINISH: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text00.txt
+Proxy stderr: cache full 993196, http://hammerheadshark.ics.cs.cmu.edu:26047/big-text09.txt
+Proxy stderr: compare 18, 2147483647
+Proxy stderr: compare 17, 18
+Proxy stderr: compare 16, 17
+Proxy stderr: compare 15, 16
+Proxy stderr: compare 14, 15
+Proxy stderr: compare 13, 14
+Proxy stderr: compare 12, 13
+Proxy stderr: compare 11, 12
+Proxy stderr: compare 10, 11
+Proxy stderr: compare 9, 10
+Proxy stderr: compare 8, 9
+Proxy stderr: compare 7, 8
+Proxy stderr: compare 6, 7
+Proxy stderr: compare 5, 6
+Proxy stderr: compare 4, 5
+Proxy stderr: compare 3, 4
+Proxy stderr: compare 2, 3
+Proxy stderr: compare 1, 2
+Proxy stderr: EVICT: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text01.txt
+Proxy stderr: EVICT FINISH: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text01.txt
+Proxy stderr: cache full 983018, http://hammerheadshark.ics.cs.cmu.edu:26047/big-text09.txt
+Proxy stderr: compare 18, 2147483647
+Proxy stderr: compare 17, 18
+Proxy stderr: compare 16, 17
+Proxy stderr: compare 15, 16
+Proxy stderr: compare 14, 15
+Proxy stderr: compare 13, 14
+Proxy stderr: compare 12, 13
+Proxy stderr: compare 11, 12
+Proxy stderr: compare 10, 11
+Proxy stderr: compare 9, 10
+Proxy stderr: compare 8, 9
+Proxy stderr: compare 7, 8
+Proxy stderr: compare 6, 7
+Proxy stderr: compare 5, 6
+Proxy stderr: compare 4, 5
+Proxy stderr: compare 3, 4
+Proxy stderr: compare 2, 3
+Proxy stderr: EVICT: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text02.txt
+Proxy stderr: EVICT FINISH: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text02.txt
+Proxy stderr: cache full 972840, http://hammerheadshark.ics.cs.cmu.edu:26047/big-text09.txt
+Proxy stderr: compare 18, 2147483647
+Proxy stderr: compare 17, 18
+Proxy stderr: compare 16, 17
+Proxy stderr: compare 15, 16
+Proxy stderr: compare 14, 15
+Proxy stderr: compare 13, 14
+Proxy stderr: compare 12, 13
+Proxy stderr: compare 11, 12
+Proxy stderr: compare 10, 11
+Proxy stderr: compare 9, 10
+Proxy stderr: compare 8, 9
+Proxy stderr: compare 7, 8
+Proxy stderr: compare 6, 7
+Proxy stderr: compare 5, 6
+Proxy stderr: compare 4, 5
+Proxy stderr: compare 3, 4
+Proxy stderr: EVICT: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text03.txt
+Proxy stderr: EVICT FINISH: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text03.txt
+Proxy stderr: cache full 962662, http://hammerheadshark.ics.cs.cmu.edu:26047/big-text09.txt
+Proxy stderr: compare 18, 2147483647
+Proxy stderr: compare 17, 18
+Proxy stderr: compare 16, 17
+Proxy stderr: compare 15, 16
+Proxy stderr: compare 14, 15
+Proxy stderr: compare 13, 14
+Proxy stderr: compare 12, 13
+Proxy stderr: compare 11, 12
+Proxy stderr: compare 10, 11
+Proxy stderr: compare 9, 10
+Proxy stderr: compare 8, 9
+Proxy stderr: compare 7, 8
+Proxy stderr: compare 6, 7
+Proxy stderr: compare 5, 6
+Proxy stderr: compare 4, 5
+Proxy stderr: EVICT: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text04.txt
+Proxy stderr: EVICT FINISH: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text04.txt
+Proxy stderr: cache full 952484, http://hammerheadshark.ics.cs.cmu.edu:26047/big-text09.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text10.txt  READNB n 100000
+Proxy stderr: compare 18, 2147483647
+Proxy stderr: compare 17, 18
+Proxy stderr: compare 16, 17
+Proxy stderr: compare 15, 16
+Proxy stderr: compare 14, 15
+Proxy stderr: compare 13, 14
+Proxy stderr: compare 12, 13
+Proxy stderr: compare 11, 12
+Proxy stderr: compare 10, 11
+Proxy stderr: compare 9, 10
+Proxy stderr: compare 8, 9
+Proxy stderr: compare 7, 8
+Proxy stderr: compare 6, 7
+Proxy stderr: compare 5, 6
+Proxy stderr: EVICT: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text06.txt
+Proxy stderr: EVICT FINISH: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text06.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text09.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text10.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text10.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 100177, key: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text10.txt
+Proxy stderr:  total size before add: 1042483
+Proxy stderr: current cache size before add 1042483, http://hammerheadshark.ics.cs.cmu.edu:26047/big-text10.txt
+Proxy stderr: cache full 1042483, http://hammerheadshark.ics.cs.cmu.edu:26047/big-text10.txt
+Proxy stderr: compare 19, 2147483647
+Proxy stderr: compare 18, 19
+Proxy stderr: compare 17, 18
+Proxy stderr: compare 16, 17
+Proxy stderr: compare 15, 16
+Proxy stderr: compare 14, 15
+Proxy stderr: compare 13, 14
+Proxy stderr: compare 12, 13
+Proxy stderr: compare 11, 12
+Proxy stderr: compare 10, 11
+Proxy stderr: compare 9, 10
+Proxy stderr: compare 8, 9
+Proxy stderr: compare 7, 8
+Proxy stderr: compare 6, 7
+Proxy stderr: EVICT: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text07.txt
+Proxy stderr: EVICT FINISH: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text07.txt
+Proxy stderr: cache full 1032305, http://hammerheadshark.ics.cs.cmu.edu:26047/big-text10.txt
+Proxy stderr: compare 19, 2147483647
+Proxy stderr: compare 18, 19
+Proxy stderr: compare 17, 18
+Proxy stderr: compare 16, 17
+Proxy stderr: compare 15, 16
+Proxy stderr: compare 14, 15
+Proxy stderr: compare 13, 14
+Proxy stderr: compare 12, 13
+Proxy stderr: compare 11, 12
+Proxy stderr: compare 10, 11
+Proxy stderr: compare 9, 10
+Proxy stderr: compare 8, 9
+Proxy stderr: compare 7, 8
+Proxy stderr: EVICT: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text08.txt
+Proxy stderr: EVICT FINISH: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text08.txt
+Proxy stderr: cache full 1022127, http://hammerheadshark.ics.cs.cmu.edu:26047/big-text10.txt
+Proxy stderr: compare 19, 2147483647
+Proxy stderr: compare 18, 19
+Proxy stderr: compare 17, 18
+Proxy stderr: compare 16, 17
+Proxy stderr: compare 15, 16
+Proxy stderr: compare 14, 15
+Proxy stderr: compare 13, 14
+Proxy stderr: compare 12, 13
+Proxy stderr: compare 11, 12
+Proxy stderr: compare 10, 11
+Proxy stderr: compare 9, 10
+Proxy stderr: compare 8, 9
+>check fb00
+Request fb00 yielded expected status 'ok'
+>check fb01
+Proxy stderr: EVICT: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text09.txt
+Request fb01 yielded expected status 'ok'
+>check fb02
+Request fb02 yielded expected status 'ok'
+>check fb03
+Request fb03 yielded expected status 'ok'
+>check fb04
+Request fb04 yielded expected status 'ok'
+>check fb05
+Request fb05 yielded expected status 'ok'
+>check fb06
+Request fb06 yielded expected status 'ok'
+Proxy stderr: EVICT FINISH: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text09.txt
+>check fb07
+Request fb07 yielded expected status 'ok'
+>check fb08
+Request fb08 yielded expected status 'ok'
+>check fb09
+Request fb09 yielded expected status 'ok'
+>check fb10
+Request fb10 yielded expected status 'ok'
+>delete little-text00.txt
+Proxy stderr: cache full 1011949, http://hammerheadshark.ics.cs.cmu.edu:26047/big-text10.txt
+Proxy stderr: compare 19, 2147483647
+Proxy stderr: compare 18, 19
+Proxy stderr: compare 17, 18
+Proxy stderr: compare 16, 17
+Proxy stderr: compare 15, 16
+Proxy stderr: compare 14, 15
+Proxy stderr: compare 13, 14
+Proxy stderr: compare 12, 13
+Proxy stderr: compare 11, 12
+Proxy stderr: compare 10, 11
+Proxy stderr: compare 9, 10
+Proxy stderr: EVICT: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text05.txt
+Proxy stderr: EVICT FINISH: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text05.txt
+Proxy stderr: cache full 1001770, http://hammerheadshark.ics.cs.cmu.edu:26047/big-text10.txt
+Proxy stderr: compare 19, 2147483647
+Proxy stderr: compare 18, 19
+Proxy stderr: compare 17, 18
+Proxy stderr: compare 16, 17
+Proxy stderr: compare 15, 16
+Proxy stderr: compare 14, 15
+Proxy stderr: compare 13, 14
+Proxy stderr: compare 12, 13
+Proxy stderr: compare 11, 12
+Proxy stderr: compare 10, 11
+Proxy stderr: EVICT: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text01.txt
+Proxy stderr: EVICT FINISH: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text01.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text10.txt
+>delete little-text01.txt
+>delete little-text02.txt
+>delete little-text03.txt
+>delete little-text04.txt
+>delete little-text05.txt
+>delete little-text06.txt
+>delete little-text07.txt
+>delete little-text08.txt
+>delete little-text09.txt
+># These should not be in the cache
+>request rl00 little-text00.txt s1
+Client: Requesting '/little-text00.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: 
+>request rl01 little-text01.txt s1
+Client: Requesting '/little-text01.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/little-text00.txt HTTP/1.0
+>request rl02 little-text02.txt s1
+Client: Requesting '/little-text02.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: rl00
+>request rl03 little-text03.txt s1
+Client: Requesting '/little-text03.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Response: Deferred
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+>request rl04 little-text04.txt s1
+Proxy stderr: 
+Client: Requesting '/little-text04.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr:  print Request GET /little-text00.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rl00
+Proxy stderr: Response: Deferred
+>request rl05 little-text05.txt s1
+Client: Requesting '/little-text05.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Connection: close
+>request rl06 little-text06.txt s1
+Proxy stderr: Proxy-Connection: close
+Client: Requesting '/little-text06.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+>request rl07 little-text07.txt s1
+Proxy stderr: 
+Client: Requesting '/little-text07.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: 
+Proxy stderr:  buf get GET /little-text00.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+>request rl08 little-text08.txt s1
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text00.txt
+Client: Requesting '/little-text08.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: clientfd: 6
+Proxy stderr: 
+Proxy stderr:  Request GET /little-text00.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+>request rl09 little-text09.txt s1
+Proxy stderr: Request-ID: rl00
+Client: Requesting '/little-text09.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+>wait *
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 247
+># Server should respond that the files were not found
+># Out of order response will cause sequential proxy to fail
+Proxy stderr: 
+>respond rl05 rl06 rl07 rl08 rl09
+Server responded to request rl05 with status not_found (File 'little-text05.txt' not found)
+Proxy stderr:  ------------- NEW request ---------------
+Server responded to request rl06 with status not_found (File 'little-text06.txt' not found)
+Proxy stderr: 
+Server responded to request rl07 with status not_found (File 'little-text07.txt' not found)
+Server responded to request rl08 with status not_found (File 'little-text08.txt' not found)
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/little-text01.txt HTTP/1.0
+Server responded to request rl09 with status not_found (File 'little-text09.txt' not found)
+>respond rl00 rl01 rl02 rl03 rl04
+Server responded to request rl00 with status not_found (File 'little-text00.txt' not found)
+Server responded to request rl01 with status not_found (File 'little-text01.txt' not found)
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Server responded to request rl02 with status not_found (File 'little-text02.txt' not found)
+Server responded to request rl03 with status not_found (File 'little-text03.txt' not found)
+Proxy stderr: DEBUG: Request-ID: rl01
+Server responded to request rl04 with status not_found (File 'little-text04.txt' not found)
+>wait *
+Proxy stderr: DEBUG: Response: Deferred
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /little-text01.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rl01
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /little-text01.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text01.txt
+Proxy stderr: clientfd: 9
+Proxy stderr: 
+Proxy stderr:  Request GET /little-text01.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rl01
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 247
+Proxy stderr: 
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/little-text02.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: rl02
+Proxy stderr: DEBUG: Response: Deferred
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /little-text02.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rl02
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /little-text02.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text02.txt
+Proxy stderr: clientfd: 11
+Proxy stderr: 
+Proxy stderr:  Request GET /little-text02.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rl02
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+># Make sure correct response received
+>check rl00 404
+Request rl00 yielded expected status 'not_found'
+>check rl01 404
+Request rl01 yielded expected status 'not_found'
+>check rl02 404
+Request rl02 yielded expected status 'not_found'
+>check rl03 404
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Request rl03 yielded expected status 'not_found'
+>check rl04 404
+Request rl04 yielded expected status 'not_found'
+>check rl05 404
+Request rl05 yielded expected status 'not_found'
+>check rl06 404
+Request rl06 yielded expected status 'not_found'
+>check rl07 404
+Request rl07 yielded expected status 'not_found'
+>check rl08 404
+Request rl08 yielded expected status 'not_found'
+>check rl09 404
+Request rl09 yielded expected status 'not_found'
+Proxy stderr: 
+># Make sure still have most of the big blocks in cache
+Proxy stderr: 
+>request rb02 big-text02.txt s1
+Proxy stderr: 
+Client: Requesting '/big-text02.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr:  n: 247
+Proxy stderr: 
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+>request rb03 big-text03.txt s1
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/little-text03.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Client: Requesting '/big-text03.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: rl03
+Proxy stderr: DEBUG: Response: Deferred
+>request rb04 big-text04.txt s1
+Client: Requesting '/big-text04.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Connection: close
+>request rb05 big-text05.txt s1
+Client: Requesting '/big-text05.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /little-text03.txt HTTP/1.0
+>request rb06 big-text06.txt s1
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Client: Requesting '/big-text06.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rl03
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+>request rb07 big-text07.txt s1
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /little-text03.txt HTTP/1.0
+Proxy stderr: 
+Client: Requesting '/big-text07.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text03.txt
+Proxy stderr: clientfd: 13
+Proxy stderr: 
+Proxy stderr:  Request GET /little-text03.txt HTTP/1.0
+>request rb08 big-text08.txt s1
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rl03
+Client: Requesting '/big-text08.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+>request rb09 big-text09.txt s1
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Client: Requesting '/big-text09.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 247
+Proxy stderr: 
+Proxy stderr:  ------------- NEW request ---------------
+>request rb10 big-text10.txt s1
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/little-text04.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Client: Requesting '/big-text10.txt' from hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: rl04
+Proxy stderr: DEBUG: Response: Deferred
+>wait *
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /little-text04.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rl04
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /little-text04.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text04.txt
+Proxy stderr: clientfd: 15
+Proxy stderr: 
+Proxy stderr:  Request GET /little-text04.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rl04
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 247
+Proxy stderr: 
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/little-text05.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: rl05
+Proxy stderr: DEBUG: Response: Deferred
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /little-text05.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rl05
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /little-text05.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text05.txt
+Proxy stderr: clientfd: 17
+Proxy stderr: 
+Proxy stderr:  Request GET /little-text05.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rl05
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 247
+Proxy stderr: 
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/little-text06.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: rl06
+Proxy stderr: DEBUG: Response: Deferred
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /little-text06.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rl06
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /little-text06.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text06.txt
+Proxy stderr: clientfd: 19
+Proxy stderr: 
+Proxy stderr:  Request GET /little-text06.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rl06
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 247
+Proxy stderr: 
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/little-text07.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: rl07
+Proxy stderr: DEBUG: Response: Deferred
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /little-text07.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rl07
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /little-text07.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text07.txt
+Proxy stderr: clientfd: 21
+Proxy stderr: 
+Proxy stderr:  Request GET /little-text07.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rl07
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 247
+Proxy stderr: 
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/little-text08.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: rl08
+Proxy stderr: DEBUG: Response: Deferred
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /little-text08.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rl08
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /little-text08.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text08.txt
+Proxy stderr: clientfd: 23
+Proxy stderr: 
+Proxy stderr:  Request GET /little-text08.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rl08
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 247
+Proxy stderr: 
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/little-text09.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: rl09
+Proxy stderr: DEBUG: Response: Deferred
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /little-text09.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rl09
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /little-text09.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text09.txt
+Proxy stderr: clientfd: 25
+Proxy stderr: 
+Proxy stderr:  Request GET /little-text09.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rl09
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  n: 247
+Proxy stderr: WRITE HTTP/1.0 404 Not found
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: WRITE Request-ID: rl05
+Proxy stderr: WRITE Content-length: 160
+Proxy stderr: content length found Content-length: 160
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text05.txt
+Proxy stderr: WRITE Content-type: text/html
+Proxy stderr: WRITE Content-Identifier: s1-/little-text05.txt
+Proxy stderr: WRITE Sequence-Identifier: 27
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 160
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text05.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text05.txt content length 160
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text05.txt TEST0
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text05.txt  READNB n 160
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text05.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text05.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 343, key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text05.txt
+Proxy stderr:  total size before add: 1001770
+Proxy stderr: current cache size before add 1001770, http://hammerheadshark.ics.cs.cmu.edu:26047/little-text05.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text05.txt
+Proxy stderr: WRITE HTTP/1.0 404 Not found
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: WRITE Request-ID: rl06
+Proxy stderr: WRITE Content-length: 160
+Proxy stderr: content length found Content-length: 160
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text06.txt
+Proxy stderr: WRITE Content-type: text/html
+Proxy stderr: WRITE Content-Identifier: s1-/little-text06.txt
+Proxy stderr: WRITE Sequence-Identifier: 28
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 160
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text06.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text06.txt content length 160
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text06.txt TEST0
+Proxy stderr: WRITE HTTP/1.0 404 Not found
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: WRITE Request-ID: rl08
+Proxy stderr: WRITE Content-length: 160
+Proxy stderr: content length found Content-length: 160
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text08.txt
+Proxy stderr: WRITE Content-type: text/html
+Proxy stderr: WRITE Content-Identifier: s1-/little-text08.txt
+Proxy stderr: WRITE Sequence-Identifier: 30
+Proxy stderr: WRITE HTTP/1.0 404 Not found
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 160
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text08.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text08.txt content length 160
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text08.txt TEST0
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text08.txt  READNB n 160
+Proxy stderr: WRITE Request-ID: rl09
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text08.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text08.txt
+Proxy stderr:  WRITE Content-length: 160
+Proxy stderr: content length found Content-length: 160
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text09.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 343, key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text08.txt
+Proxy stderr:  total size before add: 1002113
+Proxy stderr: current cache size before add 1002113, http://hammerheadshark.ics.cs.cmu.edu:26047/little-text08.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text08.txt
+Proxy stderr: WRITE Content-type: text/html
+Proxy stderr: WRITE Content-Identifier: s1-/little-text09.txt
+Proxy stderr: WRITE Sequence-Identifier: 31
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 160
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text09.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text09.txt content length 160
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text09.txt TEST0
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text09.txt  READNB n 160
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text09.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text09.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 343, key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text09.txt
+Proxy stderr:  total size before add: 1002456
+Proxy stderr: current cache size before add 1002456, http://hammerheadshark.ics.cs.cmu.edu:26047/little-text09.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text09.txt
+Proxy stderr: WRITE HTTP/1.0 404 Not found
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: WRITE Request-ID: rl00
+Proxy stderr: WRITE Content-length: 160
+Proxy stderr: content length found Content-length: 160
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text00.txt
+Proxy stderr: WRITE Content-type: text/html
+Proxy stderr: WRITE Content-Identifier: s1-/little-text00.txt
+Proxy stderr: WRITE Sequence-Identifier: 22
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 160
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text00.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text00.txt content length 160
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text00.txt TEST0
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text00.txt  READNB n 160
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text00.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text00.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 343, key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text00.txt
+Proxy stderr:  total size before add: 1002799
+Proxy stderr: current cache size before add 1002799, http://hammerheadshark.ics.cs.cmu.edu:26047/little-text00.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text00.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text06.txt  READNB n 160
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text06.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text06.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 343, key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text06.txt
+Proxy stderr:  total size before add: 1003142
+Proxy stderr: current cache size before add 1003142, http://hammerheadshark.ics.cs.cmu.edu:26047/little-text06.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text06.txt
+Proxy stderr: WRITE HTTP/1.0 404 Not found
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: WRITE Request-ID: rl07
+Proxy stderr: WRITE Content-length: 160
+Proxy stderr: content length found Content-length: 160
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text07.txt
+Proxy stderr: WRITE Content-type: text/html
+Proxy stderr: WRITE Content-Identifier: s1-/little-text07.txt
+Proxy stderr: WRITE Sequence-Identifier: 29
+Proxy stderr: WRITE HTTP/1.0 404 Not found
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 160
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text07.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text07.txt content length 160
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text07.txt TEST0
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text07.txt  READNB n 160
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text07.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text07.txt
+Proxy stderr:  WRITE Request-ID: rl01
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 343, key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text07.txt
+Proxy stderr:  total size before add: 1003485
+Proxy stderr: current cache size before add 1003485, http://hammerheadshark.ics.cs.cmu.edu:26047/little-text07.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text07.txt
+Proxy stderr: WRITE Content-length: 160
+Proxy stderr: content length found Content-length: 160
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text01.txt
+Proxy stderr: WRITE Content-type: text/html
+Proxy stderr: WRITE Content-Identifier: s1-/little-text01.txt
+Proxy stderr: WRITE Sequence-Identifier: 23
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 160
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text01.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text01.txt content length 160
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text01.txt TEST0
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text01.txt  READNB n 160
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text01.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text01.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 343, key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text01.txt
+Proxy stderr:  total size before add: 1003828
+Proxy stderr: current cache size before add 1003828, http://hammerheadshark.ics.cs.cmu.edu:26047/little-text01.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text01.txt
+Proxy stderr: WRITE HTTP/1.0 404 Not found
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: WRITE Request-ID: rl02
+Proxy stderr: WRITE Content-length: 160
+Proxy stderr: content length found Content-length: 160
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text02.txt
+Proxy stderr: WRITE Content-type: text/html
+Proxy stderr: WRITE Content-Identifier: s1-/little-text02.txt
+Proxy stderr: WRITE Sequence-Identifier: 24
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 160
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text02.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text02.txt content length 160
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text02.txt TEST0
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text02.txt  READNB n 160
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text02.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text02.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 343, key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text02.txt
+Proxy stderr:  total size before add: 1004171
+Proxy stderr: current cache size before add 1004171, http://hammerheadshark.ics.cs.cmu.edu:26047/little-text02.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text02.txt
+Proxy stderr: WRITE HTTP/1.0 404 Not found
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: WRITE Request-ID: rl03
+Proxy stderr: WRITE Content-length: 160
+Proxy stderr: content length found Content-length: 160
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text03.txt
+Proxy stderr: WRITE Content-type: text/html
+Proxy stderr: WRITE Content-Identifier: s1-/little-text03.txt
+Proxy stderr: WRITE Sequence-Identifier: 25
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 160
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text03.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text03.txt content length 160
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text03.txt TEST0
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text03.txt  READNB n 160
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text03.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text03.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 343, key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text03.txt
+Proxy stderr:  total size before add: 1004514
+Proxy stderr: current cache size before add 1004514, http://hammerheadshark.ics.cs.cmu.edu:26047/little-text03.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text03.txt
+Proxy stderr: WRITE HTTP/1.0 404 Not found
+Proxy stderr: WRITE Server: Proxylab driver
+Proxy stderr: WRITE Request-ID: rl04
+Proxy stderr: WRITE Content-length: 160
+Proxy stderr: content length found Content-length: 160
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text04.txt
+Proxy stderr: WRITE Content-type: text/html
+Proxy stderr: WRITE Content-Identifier: s1-/little-text04.txt
+Proxy stderr: WRITE Sequence-Identifier: 26
+Proxy stderr: WRITE
+Proxy stderr: content length str Content-length: 160
+Proxy stderr: ,  key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text04.txt
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text04.txt content length 160
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text04.txt TEST0
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text04.txt  READNB n 160
+Proxy stderr: key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text04.txt Write Finish
+Proxy stderr: 
+Proxy stderr:  Write finished: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text04.txt
+Proxy stderr: 
+Proxy stderr:  SAVE TO CACHE cache data size: 343, key: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text04.txt
+Proxy stderr:  total size before add: 1004857
+Proxy stderr: current cache size before add 1004857, http://hammerheadshark.ics.cs.cmu.edu:26047/little-text04.txt
+Proxy stderr: KEY: http://hammerheadshark.ics.cs.cmu.edu:26047/little-text04.txt
+Proxy stderr: 
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/big-text02.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: rb02
+Proxy stderr: DEBUG: Response: Deferred
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /big-text02.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rb02
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /big-text02.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text02.txt
+Proxy stderr: 
+Proxy stderr: found
+Proxy stderr: 
+Proxy stderr: found in cache http://hammerheadshark.ics.cs.cmu.edu:26047/big-text02.txt
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/big-text03.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: rb03
+Proxy stderr: DEBUG: Response: Deferred
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /big-text03.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rb03
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /big-text03.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text03.txt
+Proxy stderr: 
+Proxy stderr: found
+Proxy stderr: 
+Proxy stderr: found in cache http://hammerheadshark.ics.cs.cmu.edu:26047/big-text03.txt
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/big-text04.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: rb04
+Proxy stderr: DEBUG: Response: Deferred
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /big-text04.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rb04
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /big-text04.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text04.txt
+Proxy stderr: 
+Proxy stderr: found
+Proxy stderr: 
+Proxy stderr: found in cache http://hammerheadshark.ics.cs.cmu.edu:26047/big-text04.txt
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/big-text05.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: rb05
+Proxy stderr: DEBUG: Response: Deferred
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /big-text05.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rb05
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /big-text05.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text05.txt
+Proxy stderr: 
+Proxy stderr: found
+Proxy stderr: 
+Proxy stderr: found in cache http://hammerheadshark.ics.cs.cmu.edu:26047/big-text05.txt
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/big-text06.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: rb06
+Proxy stderr: DEBUG: Response: Deferred
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /big-text06.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rb06
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /big-text06.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text06.txt
+Proxy stderr: 
+Proxy stderr: found
+Proxy stderr: 
+Proxy stderr: found in cache http://hammerheadshark.ics.cs.cmu.edu:26047/big-text06.txt
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/big-text07.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: rb07
+Proxy stderr: DEBUG: Response: Deferred
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /big-text07.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rb07
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /big-text07.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text07.txt
+Proxy stderr: 
+Proxy stderr: found
+Proxy stderr: 
+Proxy stderr: found in cache http://hammerheadshark.ics.cs.cmu.edu:26047/big-text07.txt
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/big-text08.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: rb08
+Proxy stderr: DEBUG: Response: Deferred
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /big-text08.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rb08
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /big-text08.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text08.txt
+Proxy stderr: 
+Proxy stderr: found
+Proxy stderr: 
+Proxy stderr: found in cache http://hammerheadshark.ics.cs.cmu.edu:26047/big-text08.txt
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/big-text09.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: rb09
+Proxy stderr: DEBUG: Response: Deferred
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /big-text09.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rb09
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /big-text09.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text09.txt
+Proxy stderr: 
+Proxy stderr: found
+Proxy stderr: 
+Proxy stderr: found in cache http://hammerheadshark.ics.cs.cmu.edu:26047/big-text09.txt
+Proxy stderr:  ------------- NEW request ---------------
+Proxy stderr: 
+Proxy stderr:  BUF firstline: GET http://hammerheadshark.ics.cs.cmu.edu:26047/big-text10.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: CREATE request
+Proxy stderr: DEBUG: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: DEBUG: Request-ID: rb10
+Proxy stderr: DEBUG: Response: Deferred
+Proxy stderr: DEBUG: Connection: close
+Proxy stderr: DEBUG: Proxy-Connection: close
+Proxy stderr: DEBUG: User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1
+Proxy stderr: 
+Proxy stderr:  print Request GET /big-text10.txt HTTP/1.0
+Proxy stderr: Host: hammerheadshark.ics.cs.cmu.edu:26047
+Proxy stderr: Request-ID: rb10
+Proxy stderr: Response: Deferred
+Proxy stderr: Connection: close
+Proxy stderr: Proxy-Connection: close
+Proxy stderr: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190801 Firefox/63.0.1
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr:  buf get GET /big-text10.txt HTTP/1.0
+Proxy stderr: 
+Proxy stderr: 
+Proxy stderr: key for check cache: http://hammerheadshark.ics.cs.cmu.edu:26047/big-text10.txt
+Proxy stderr: 
+Proxy stderr: found
+Proxy stderr: 
+>check rb02
+Request rb02 yielded expected status 'ok'
+>check rb03
+Request rb03 yielded expected status 'ok'
+>check rb04
+Request rb04 yielded expected status 'ok'
+>check rb05
+Request rb05 yielded expected status 'ok'
+>check rb06
+Request rb06 yielded expected status 'ok'
+>check rb07
+Request rb07 yielded expected status 'ok'
+>check rb08
+Request rb08 yielded expected status 'ok'
+>check rb09
+Request rb09 yielded expected status 'ok'
+>check rb10
+Request rb10 yielded expected status 'ok'
+>delete big-text00.txt
+>delete big-text01.txt
+>delete big-text02.txt
+>delete big-text03.txt
+>delete big-text04.txt
+>delete big-text05.txt
+>delete big-text06.txt
+>delete big-text07.txt
+>delete big-text08.txt
+>delete big-text09.txt
+>delete big-text10.txt
+>quit
+Proxy stderr: found in cache http://hammerheadshark.ics.cs.cmu.edu:26047/big-text10.txt
+Testing done.  Elapsed time = 3.57 seconds
+ALL TESTS PASSED

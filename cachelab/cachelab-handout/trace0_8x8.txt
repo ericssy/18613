@@ -1,0 +1,955 @@
+address 0x708380
+tag bits 0x708000
+set index 0xe
+block offset 0x0
+L 708380,8 miss
+dirty bytes:0  dirty evicted:0
+
+address 0x788380
+tag bits 0x788000
+set index 0xe
+block offset 0x0
+initial dirty bit: 0
+S 788380,8 miss eviction
+start788380, end7883c0dirty bytes:64  dirty evicted:0
+least recent 0
+
+address 0x708388
+tag bits 0x708000
+set index 0xe
+block offset 0x8
+initial dirty bit: 1
+L 708388,8 miss eviction
+start708380, end7083c0dirty bytes:0  dirty evicted:64
+least recent 0
+
+address 0x7883c0
+tag bits 0x788000
+set index 0xf
+block offset 0x0
+S 7883c0,8 miss
+dirty bytes:64  dirty evicted:64
+
+address 0x708390
+tag bits 0x708000
+set index 0xe
+block offset 0x10
+L 708390,8 hit
+dirty bytes:64  dirty evicted:64
+
+address 0x788400
+tag bits 0x788000
+set index 0x10
+block offset 0x0
+S 788400,8 miss
+dirty bytes:128  dirty evicted:64
+
+address 0x708398
+tag bits 0x708000
+set index 0xe
+block offset 0x18
+L 708398,8 hit
+dirty bytes:128  dirty evicted:64
+
+address 0x788440
+tag bits 0x788000
+set index 0x11
+block offset 0x0
+S 788440,8 miss
+dirty bytes:192  dirty evicted:64
+
+address 0x7083a0
+tag bits 0x708000
+set index 0xe
+block offset 0x20
+L 7083a0,8 hit
+dirty bytes:192  dirty evicted:64
+
+address 0x788480
+tag bits 0x788000
+set index 0x12
+block offset 0x0
+S 788480,8 miss
+dirty bytes:256  dirty evicted:64
+
+address 0x7083a8
+tag bits 0x708000
+set index 0xe
+block offset 0x28
+L 7083a8,8 hit
+dirty bytes:256  dirty evicted:64
+
+address 0x7884c0
+tag bits 0x788000
+set index 0x13
+block offset 0x0
+S 7884c0,8 miss
+dirty bytes:320  dirty evicted:64
+
+address 0x7083b0
+tag bits 0x708000
+set index 0xe
+block offset 0x30
+L 7083b0,8 hit
+dirty bytes:320  dirty evicted:64
+
+address 0x788500
+tag bits 0x788000
+set index 0x14
+block offset 0x0
+S 788500,8 miss
+dirty bytes:384  dirty evicted:64
+
+address 0x7083b8
+tag bits 0x708000
+set index 0xe
+block offset 0x38
+L 7083b8,8 hit
+dirty bytes:384  dirty evicted:64
+
+address 0x788540
+tag bits 0x788000
+set index 0x15
+block offset 0x0
+S 788540,8 miss
+dirty bytes:448  dirty evicted:64
+
+address 0x7083c0
+tag bits 0x708000
+set index 0xf
+block offset 0x0
+initial dirty bit: 1
+L 7083c0,8 miss eviction
+start7083c0, end708400dirty bytes:384  dirty evicted:128
+least recent 0
+
+address 0x788388
+tag bits 0x788000
+set index 0xe
+block offset 0x8
+initial dirty bit: 0
+S 788388,8 miss eviction
+start788380, end7883c0dirty bytes:448  dirty evicted:128
+least recent 0
+
+address 0x7083c8
+tag bits 0x708000
+set index 0xf
+block offset 0x8
+L 7083c8,8 hit
+dirty bytes:448  dirty evicted:128
+
+address 0x7883c8
+tag bits 0x788000
+set index 0xf
+block offset 0x8
+initial dirty bit: 0
+S 7883c8,8 miss eviction
+start7883c0, end788400dirty bytes:512  dirty evicted:128
+least recent 0
+
+address 0x7083d0
+tag bits 0x708000
+set index 0xf
+block offset 0x10
+initial dirty bit: 1
+L 7083d0,8 miss eviction
+start7083c0, end708400dirty bytes:448  dirty evicted:192
+least recent 0
+
+address 0x788408
+tag bits 0x788000
+set index 0x10
+block offset 0x8
+S 788408,8 hit
+dirty bytes:448  dirty evicted:192
+
+address 0x7083d8
+tag bits 0x708000
+set index 0xf
+block offset 0x18
+L 7083d8,8 hit
+dirty bytes:448  dirty evicted:192
+
+address 0x788448
+tag bits 0x788000
+set index 0x11
+block offset 0x8
+S 788448,8 hit
+dirty bytes:448  dirty evicted:192
+
+address 0x7083e0
+tag bits 0x708000
+set index 0xf
+block offset 0x20
+L 7083e0,8 hit
+dirty bytes:448  dirty evicted:192
+
+address 0x788488
+tag bits 0x788000
+set index 0x12
+block offset 0x8
+S 788488,8 hit
+dirty bytes:448  dirty evicted:192
+
+address 0x7083e8
+tag bits 0x708000
+set index 0xf
+block offset 0x28
+L 7083e8,8 hit
+dirty bytes:448  dirty evicted:192
+
+address 0x7884c8
+tag bits 0x788000
+set index 0x13
+block offset 0x8
+S 7884c8,8 hit
+dirty bytes:448  dirty evicted:192
+
+address 0x7083f0
+tag bits 0x708000
+set index 0xf
+block offset 0x30
+L 7083f0,8 hit
+dirty bytes:448  dirty evicted:192
+
+address 0x788508
+tag bits 0x788000
+set index 0x14
+block offset 0x8
+S 788508,8 hit
+dirty bytes:448  dirty evicted:192
+
+address 0x7083f8
+tag bits 0x708000
+set index 0xf
+block offset 0x38
+L 7083f8,8 hit
+dirty bytes:448  dirty evicted:192
+
+address 0x788548
+tag bits 0x788000
+set index 0x15
+block offset 0x8
+S 788548,8 hit
+dirty bytes:448  dirty evicted:192
+
+address 0x708400
+tag bits 0x708000
+set index 0x10
+block offset 0x0
+initial dirty bit: 1
+L 708400,8 miss eviction
+start708400, end708440dirty bytes:384  dirty evicted:256
+least recent 0
+
+address 0x788390
+tag bits 0x788000
+set index 0xe
+block offset 0x10
+S 788390,8 hit
+dirty bytes:384  dirty evicted:256
+
+address 0x708408
+tag bits 0x708000
+set index 0x10
+block offset 0x8
+L 708408,8 hit
+dirty bytes:384  dirty evicted:256
+
+address 0x7883d0
+tag bits 0x788000
+set index 0xf
+block offset 0x10
+initial dirty bit: 0
+S 7883d0,8 miss eviction
+start7883c0, end788400dirty bytes:448  dirty evicted:256
+least recent 0
+
+address 0x708410
+tag bits 0x708000
+set index 0x10
+block offset 0x10
+L 708410,8 hit
+dirty bytes:448  dirty evicted:256
+
+address 0x788410
+tag bits 0x788000
+set index 0x10
+block offset 0x10
+initial dirty bit: 0
+S 788410,8 miss eviction
+start788400, end788440dirty bytes:512  dirty evicted:256
+least recent 0
+
+address 0x708418
+tag bits 0x708000
+set index 0x10
+block offset 0x18
+initial dirty bit: 1
+L 708418,8 miss eviction
+start708400, end708440dirty bytes:448  dirty evicted:320
+least recent 0
+
+address 0x788450
+tag bits 0x788000
+set index 0x11
+block offset 0x10
+S 788450,8 hit
+dirty bytes:448  dirty evicted:320
+
+address 0x708420
+tag bits 0x708000
+set index 0x10
+block offset 0x20
+L 708420,8 hit
+dirty bytes:448  dirty evicted:320
+
+address 0x788490
+tag bits 0x788000
+set index 0x12
+block offset 0x10
+S 788490,8 hit
+dirty bytes:448  dirty evicted:320
+
+address 0x708428
+tag bits 0x708000
+set index 0x10
+block offset 0x28
+L 708428,8 hit
+dirty bytes:448  dirty evicted:320
+
+address 0x7884d0
+tag bits 0x788000
+set index 0x13
+block offset 0x10
+S 7884d0,8 hit
+dirty bytes:448  dirty evicted:320
+
+address 0x708430
+tag bits 0x708000
+set index 0x10
+block offset 0x30
+L 708430,8 hit
+dirty bytes:448  dirty evicted:320
+
+address 0x788510
+tag bits 0x788000
+set index 0x14
+block offset 0x10
+S 788510,8 hit
+dirty bytes:448  dirty evicted:320
+
+address 0x708438
+tag bits 0x708000
+set index 0x10
+block offset 0x38
+L 708438,8 hit
+dirty bytes:448  dirty evicted:320
+
+address 0x788550
+tag bits 0x788000
+set index 0x15
+block offset 0x10
+S 788550,8 hit
+dirty bytes:448  dirty evicted:320
+
+address 0x708440
+tag bits 0x708000
+set index 0x11
+block offset 0x0
+initial dirty bit: 1
+L 708440,8 miss eviction
+start708440, end708480dirty bytes:384  dirty evicted:384
+least recent 0
+
+address 0x788398
+tag bits 0x788000
+set index 0xe
+block offset 0x18
+S 788398,8 hit
+dirty bytes:384  dirty evicted:384
+
+address 0x708448
+tag bits 0x708000
+set index 0x11
+block offset 0x8
+L 708448,8 hit
+dirty bytes:384  dirty evicted:384
+
+address 0x7883d8
+tag bits 0x788000
+set index 0xf
+block offset 0x18
+S 7883d8,8 hit
+dirty bytes:384  dirty evicted:384
+
+address 0x708450
+tag bits 0x708000
+set index 0x11
+block offset 0x10
+L 708450,8 hit
+dirty bytes:384  dirty evicted:384
+
+address 0x788418
+tag bits 0x788000
+set index 0x10
+block offset 0x18
+initial dirty bit: 0
+S 788418,8 miss eviction
+start788400, end788440dirty bytes:448  dirty evicted:384
+least recent 0
+
+address 0x708458
+tag bits 0x708000
+set index 0x11
+block offset 0x18
+L 708458,8 hit
+dirty bytes:448  dirty evicted:384
+
+address 0x788458
+tag bits 0x788000
+set index 0x11
+block offset 0x18
+initial dirty bit: 0
+S 788458,8 miss eviction
+start788440, end788480dirty bytes:512  dirty evicted:384
+least recent 0
+
+address 0x708460
+tag bits 0x708000
+set index 0x11
+block offset 0x20
+initial dirty bit: 1
+L 708460,8 miss eviction
+start708440, end708480dirty bytes:448  dirty evicted:448
+least recent 0
+
+address 0x788498
+tag bits 0x788000
+set index 0x12
+block offset 0x18
+S 788498,8 hit
+dirty bytes:448  dirty evicted:448
+
+address 0x708468
+tag bits 0x708000
+set index 0x11
+block offset 0x28
+L 708468,8 hit
+dirty bytes:448  dirty evicted:448
+
+address 0x7884d8
+tag bits 0x788000
+set index 0x13
+block offset 0x18
+S 7884d8,8 hit
+dirty bytes:448  dirty evicted:448
+
+address 0x708470
+tag bits 0x708000
+set index 0x11
+block offset 0x30
+L 708470,8 hit
+dirty bytes:448  dirty evicted:448
+
+address 0x788518
+tag bits 0x788000
+set index 0x14
+block offset 0x18
+S 788518,8 hit
+dirty bytes:448  dirty evicted:448
+
+address 0x708478
+tag bits 0x708000
+set index 0x11
+block offset 0x38
+L 708478,8 hit
+dirty bytes:448  dirty evicted:448
+
+address 0x788558
+tag bits 0x788000
+set index 0x15
+block offset 0x18
+S 788558,8 hit
+dirty bytes:448  dirty evicted:448
+
+address 0x708480
+tag bits 0x708000
+set index 0x12
+block offset 0x0
+initial dirty bit: 1
+L 708480,8 miss eviction
+start708480, end7084c0dirty bytes:384  dirty evicted:512
+least recent 0
+
+address 0x7883a0
+tag bits 0x788000
+set index 0xe
+block offset 0x20
+S 7883a0,8 hit
+dirty bytes:384  dirty evicted:512
+
+address 0x708488
+tag bits 0x708000
+set index 0x12
+block offset 0x8
+L 708488,8 hit
+dirty bytes:384  dirty evicted:512
+
+address 0x7883e0
+tag bits 0x788000
+set index 0xf
+block offset 0x20
+S 7883e0,8 hit
+dirty bytes:384  dirty evicted:512
+
+address 0x708490
+tag bits 0x708000
+set index 0x12
+block offset 0x10
+L 708490,8 hit
+dirty bytes:384  dirty evicted:512
+
+address 0x788420
+tag bits 0x788000
+set index 0x10
+block offset 0x20
+S 788420,8 hit
+dirty bytes:384  dirty evicted:512
+
+address 0x708498
+tag bits 0x708000
+set index 0x12
+block offset 0x18
+L 708498,8 hit
+dirty bytes:384  dirty evicted:512
+
+address 0x788460
+tag bits 0x788000
+set index 0x11
+block offset 0x20
+initial dirty bit: 0
+S 788460,8 miss eviction
+start788440, end788480dirty bytes:448  dirty evicted:512
+least recent 0
+
+address 0x7084a0
+tag bits 0x708000
+set index 0x12
+block offset 0x20
+L 7084a0,8 hit
+dirty bytes:448  dirty evicted:512
+
+address 0x7884a0
+tag bits 0x788000
+set index 0x12
+block offset 0x20
+initial dirty bit: 0
+S 7884a0,8 miss eviction
+start788480, end7884c0dirty bytes:512  dirty evicted:512
+least recent 0
+
+address 0x7084a8
+tag bits 0x708000
+set index 0x12
+block offset 0x28
+initial dirty bit: 1
+L 7084a8,8 miss eviction
+start708480, end7084c0dirty bytes:448  dirty evicted:576
+least recent 0
+
+address 0x7884e0
+tag bits 0x788000
+set index 0x13
+block offset 0x20
+S 7884e0,8 hit
+dirty bytes:448  dirty evicted:576
+
+address 0x7084b0
+tag bits 0x708000
+set index 0x12
+block offset 0x30
+L 7084b0,8 hit
+dirty bytes:448  dirty evicted:576
+
+address 0x788520
+tag bits 0x788000
+set index 0x14
+block offset 0x20
+S 788520,8 hit
+dirty bytes:448  dirty evicted:576
+
+address 0x7084b8
+tag bits 0x708000
+set index 0x12
+block offset 0x38
+L 7084b8,8 hit
+dirty bytes:448  dirty evicted:576
+
+address 0x788560
+tag bits 0x788000
+set index 0x15
+block offset 0x20
+S 788560,8 hit
+dirty bytes:448  dirty evicted:576
+
+address 0x7084c0
+tag bits 0x708000
+set index 0x13
+block offset 0x0
+initial dirty bit: 1
+L 7084c0,8 miss eviction
+start7084c0, end708500dirty bytes:384  dirty evicted:640
+least recent 0
+
+address 0x7883a8
+tag bits 0x788000
+set index 0xe
+block offset 0x28
+S 7883a8,8 hit
+dirty bytes:384  dirty evicted:640
+
+address 0x7084c8
+tag bits 0x708000
+set index 0x13
+block offset 0x8
+L 7084c8,8 hit
+dirty bytes:384  dirty evicted:640
+
+address 0x7883e8
+tag bits 0x788000
+set index 0xf
+block offset 0x28
+S 7883e8,8 hit
+dirty bytes:384  dirty evicted:640
+
+address 0x7084d0
+tag bits 0x708000
+set index 0x13
+block offset 0x10
+L 7084d0,8 hit
+dirty bytes:384  dirty evicted:640
+
+address 0x788428
+tag bits 0x788000
+set index 0x10
+block offset 0x28
+S 788428,8 hit
+dirty bytes:384  dirty evicted:640
+
+address 0x7084d8
+tag bits 0x708000
+set index 0x13
+block offset 0x18
+L 7084d8,8 hit
+dirty bytes:384  dirty evicted:640
+
+address 0x788468
+tag bits 0x788000
+set index 0x11
+block offset 0x28
+S 788468,8 hit
+dirty bytes:384  dirty evicted:640
+
+address 0x7084e0
+tag bits 0x708000
+set index 0x13
+block offset 0x20
+L 7084e0,8 hit
+dirty bytes:384  dirty evicted:640
+
+address 0x7884a8
+tag bits 0x788000
+set index 0x12
+block offset 0x28
+initial dirty bit: 0
+S 7884a8,8 miss eviction
+start788480, end7884c0dirty bytes:448  dirty evicted:640
+least recent 0
+
+address 0x7084e8
+tag bits 0x708000
+set index 0x13
+block offset 0x28
+L 7084e8,8 hit
+dirty bytes:448  dirty evicted:640
+
+address 0x7884e8
+tag bits 0x788000
+set index 0x13
+block offset 0x28
+initial dirty bit: 0
+S 7884e8,8 miss eviction
+start7884c0, end788500dirty bytes:512  dirty evicted:640
+least recent 0
+
+address 0x7084f0
+tag bits 0x708000
+set index 0x13
+block offset 0x30
+initial dirty bit: 1
+L 7084f0,8 miss eviction
+start7084c0, end708500dirty bytes:448  dirty evicted:704
+least recent 0
+
+address 0x788528
+tag bits 0x788000
+set index 0x14
+block offset 0x28
+S 788528,8 hit
+dirty bytes:448  dirty evicted:704
+
+address 0x7084f8
+tag bits 0x708000
+set index 0x13
+block offset 0x38
+L 7084f8,8 hit
+dirty bytes:448  dirty evicted:704
+
+address 0x788568
+tag bits 0x788000
+set index 0x15
+block offset 0x28
+S 788568,8 hit
+dirty bytes:448  dirty evicted:704
+
+address 0x708500
+tag bits 0x708000
+set index 0x14
+block offset 0x0
+initial dirty bit: 1
+L 708500,8 miss eviction
+start708500, end708540dirty bytes:384  dirty evicted:768
+least recent 0
+
+address 0x7883b0
+tag bits 0x788000
+set index 0xe
+block offset 0x30
+S 7883b0,8 hit
+dirty bytes:384  dirty evicted:768
+
+address 0x708508
+tag bits 0x708000
+set index 0x14
+block offset 0x8
+L 708508,8 hit
+dirty bytes:384  dirty evicted:768
+
+address 0x7883f0
+tag bits 0x788000
+set index 0xf
+block offset 0x30
+S 7883f0,8 hit
+dirty bytes:384  dirty evicted:768
+
+address 0x708510
+tag bits 0x708000
+set index 0x14
+block offset 0x10
+L 708510,8 hit
+dirty bytes:384  dirty evicted:768
+
+address 0x788430
+tag bits 0x788000
+set index 0x10
+block offset 0x30
+S 788430,8 hit
+dirty bytes:384  dirty evicted:768
+
+address 0x708518
+tag bits 0x708000
+set index 0x14
+block offset 0x18
+L 708518,8 hit
+dirty bytes:384  dirty evicted:768
+
+address 0x788470
+tag bits 0x788000
+set index 0x11
+block offset 0x30
+S 788470,8 hit
+dirty bytes:384  dirty evicted:768
+
+address 0x708520
+tag bits 0x708000
+set index 0x14
+block offset 0x20
+L 708520,8 hit
+dirty bytes:384  dirty evicted:768
+
+address 0x7884b0
+tag bits 0x788000
+set index 0x12
+block offset 0x30
+S 7884b0,8 hit
+dirty bytes:384  dirty evicted:768
+
+address 0x708528
+tag bits 0x708000
+set index 0x14
+block offset 0x28
+L 708528,8 hit
+dirty bytes:384  dirty evicted:768
+
+address 0x7884f0
+tag bits 0x788000
+set index 0x13
+block offset 0x30
+initial dirty bit: 0
+S 7884f0,8 miss eviction
+start7884c0, end788500dirty bytes:448  dirty evicted:768
+least recent 0
+
+address 0x708530
+tag bits 0x708000
+set index 0x14
+block offset 0x30
+L 708530,8 hit
+dirty bytes:448  dirty evicted:768
+
+address 0x788530
+tag bits 0x788000
+set index 0x14
+block offset 0x30
+initial dirty bit: 0
+S 788530,8 miss eviction
+start788500, end788540dirty bytes:512  dirty evicted:768
+least recent 0
+
+address 0x708538
+tag bits 0x708000
+set index 0x14
+block offset 0x38
+initial dirty bit: 1
+L 708538,8 miss eviction
+start708500, end708540dirty bytes:448  dirty evicted:832
+least recent 0
+
+address 0x788570
+tag bits 0x788000
+set index 0x15
+block offset 0x30
+S 788570,8 hit
+dirty bytes:448  dirty evicted:832
+
+address 0x708540
+tag bits 0x708000
+set index 0x15
+block offset 0x0
+initial dirty bit: 1
+L 708540,8 miss eviction
+start708540, end708580dirty bytes:384  dirty evicted:896
+least recent 0
+
+address 0x7883b8
+tag bits 0x788000
+set index 0xe
+block offset 0x38
+S 7883b8,8 hit
+dirty bytes:384  dirty evicted:896
+
+address 0x708548
+tag bits 0x708000
+set index 0x15
+block offset 0x8
+L 708548,8 hit
+dirty bytes:384  dirty evicted:896
+
+address 0x7883f8
+tag bits 0x788000
+set index 0xf
+block offset 0x38
+S 7883f8,8 hit
+dirty bytes:384  dirty evicted:896
+
+address 0x708550
+tag bits 0x708000
+set index 0x15
+block offset 0x10
+L 708550,8 hit
+dirty bytes:384  dirty evicted:896
+
+address 0x788438
+tag bits 0x788000
+set index 0x10
+block offset 0x38
+S 788438,8 hit
+dirty bytes:384  dirty evicted:896
+
+address 0x708558
+tag bits 0x708000
+set index 0x15
+block offset 0x18
+L 708558,8 hit
+dirty bytes:384  dirty evicted:896
+
+address 0x788478
+tag bits 0x788000
+set index 0x11
+block offset 0x38
+S 788478,8 hit
+dirty bytes:384  dirty evicted:896
+
+address 0x708560
+tag bits 0x708000
+set index 0x15
+block offset 0x20
+L 708560,8 hit
+dirty bytes:384  dirty evicted:896
+
+address 0x7884b8
+tag bits 0x788000
+set index 0x12
+block offset 0x38
+S 7884b8,8 hit
+dirty bytes:384  dirty evicted:896
+
+address 0x708568
+tag bits 0x708000
+set index 0x15
+block offset 0x28
+L 708568,8 hit
+dirty bytes:384  dirty evicted:896
+
+address 0x7884f8
+tag bits 0x788000
+set index 0x13
+block offset 0x38
+S 7884f8,8 hit
+dirty bytes:384  dirty evicted:896
+
+address 0x708570
+tag bits 0x708000
+set index 0x15
+block offset 0x30
+L 708570,8 hit
+dirty bytes:384  dirty evicted:896
+
+address 0x788538
+tag bits 0x788000
+set index 0x14
+block offset 0x38
+initial dirty bit: 0
+S 788538,8 miss eviction
+start788500, end788540dirty bytes:448  dirty evicted:896
+least recent 0
+
+address 0x708578
+tag bits 0x708000
+set index 0x15
+block offset 0x38
+L 708578,8 hit
+dirty bytes:448  dirty evicted:896
+
+address 0x788578
+tag bits 0x788000
+set index 0x15
+block offset 0x38
+initial dirty bit: 0
+S 788578,8 miss eviction
+start788540, end788580dirty bytes:512  dirty evicted:896
+least recent 0
+
+hits:91 misses:37 evictions:29 dirty_bytes_in_cache:512 dirty_bytes_evicted:896

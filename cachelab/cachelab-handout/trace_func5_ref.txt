@@ -1,0 +1,2361 @@
+L 707380,8 miss
+S 907380,8 miss eviction
+L 707388,8 miss eviction
+S 907388,8 miss eviction
+L 707390,8 miss eviction
+S 907390,8 miss eviction
+L 707398,8 miss eviction
+S 907398,8 miss eviction
+L 7073a0,8 miss eviction
+S 9073a0,8 miss eviction
+L 7073a8,8 miss eviction
+S 9073a8,8 miss eviction
+L 7073b0,8 miss eviction
+S 9073b0,8 miss eviction
+L 7073b8,8 miss eviction
+S 9073b8,8 miss eviction
+L 907380,8 hit
+S 787380,8 miss eviction
+L 907388,8 miss eviction
+S 787480,8 miss
+L 907390,8 hit
+S 787580,8 miss
+L 907398,8 hit
+S 787680,8 miss
+L 9073a0,8 hit
+S 787780,8 miss
+L 9073a8,8 hit
+S 787880,8 miss
+L 9073b0,8 hit
+S 787980,8 miss
+L 9073b8,8 hit
+S 787a80,8 miss
+L 707480,8 miss eviction
+S 787388,8 miss eviction
+L 707488,8 hit
+S 9073c0,8 miss
+L 707490,8 hit
+S 787588,8 hit
+L 707498,8 hit
+S 787688,8 hit
+L 7074a0,8 hit
+S 787788,8 hit
+L 7074a8,8 hit
+S 787888,8 hit
+L 7074b0,8 hit
+S 787988,8 hit
+L 7074b8,8 hit
+S 787a88,8 hit
+L 9073c0,8 hit
+S 787488,8 miss eviction
+L 707580,8 miss eviction
+S 787390,8 hit
+L 707588,8 hit
+S 787490,8 hit
+L 707590,8 hit
+S 9073c0,8 hit
+L 707598,8 hit
+S 787690,8 hit
+L 7075a0,8 hit
+S 787790,8 hit
+L 7075a8,8 hit
+S 787890,8 hit
+L 7075b0,8 hit
+S 787990,8 hit
+L 7075b8,8 hit
+S 787a90,8 hit
+L 9073c0,8 hit
+S 787590,8 miss eviction
+L 707680,8 miss eviction
+S 787398,8 hit
+L 707688,8 hit
+S 787498,8 hit
+L 707690,8 hit
+S 787598,8 hit
+L 707698,8 hit
+S 9073c0,8 hit
+L 7076a0,8 hit
+S 787798,8 hit
+L 7076a8,8 hit
+S 787898,8 hit
+L 7076b0,8 hit
+S 787998,8 hit
+L 7076b8,8 hit
+S 787a98,8 hit
+L 9073c0,8 hit
+S 787698,8 miss eviction
+L 707780,8 miss eviction
+S 7873a0,8 hit
+L 707788,8 hit
+S 7874a0,8 hit
+L 707790,8 hit
+S 7875a0,8 hit
+L 707798,8 hit
+S 7876a0,8 hit
+L 7077a0,8 hit
+S 9073c0,8 hit
+L 7077a8,8 hit
+S 7878a0,8 hit
+L 7077b0,8 hit
+S 7879a0,8 hit
+L 7077b8,8 hit
+S 787aa0,8 hit
+L 9073c0,8 hit
+S 7877a0,8 miss eviction
+L 707880,8 miss eviction
+S 7873a8,8 hit
+L 707888,8 hit
+S 7874a8,8 hit
+L 707890,8 hit
+S 7875a8,8 hit
+L 707898,8 hit
+S 7876a8,8 hit
+L 7078a0,8 hit
+S 7877a8,8 hit
+L 7078a8,8 hit
+S 9073c0,8 hit
+L 7078b0,8 hit
+S 7879a8,8 hit
+L 7078b8,8 hit
+S 787aa8,8 hit
+L 9073c0,8 hit
+S 7878a8,8 miss eviction
+L 707980,8 miss eviction
+S 7873b0,8 hit
+L 707988,8 hit
+S 7874b0,8 hit
+L 707990,8 hit
+S 7875b0,8 hit
+L 707998,8 hit
+S 7876b0,8 hit
+L 7079a0,8 hit
+S 7877b0,8 hit
+L 7079a8,8 hit
+S 7878b0,8 hit
+L 7079b0,8 hit
+S 9073c0,8 hit
+L 7079b8,8 hit
+S 787ab0,8 hit
+L 9073c0,8 hit
+S 7879b0,8 miss eviction
+L 707a80,8 miss eviction
+S 7873b8,8 hit
+L 707a88,8 hit
+S 7874b8,8 hit
+L 707a90,8 hit
+S 7875b8,8 hit
+L 707a98,8 hit
+S 7876b8,8 hit
+L 707aa0,8 hit
+S 7877b8,8 hit
+L 707aa8,8 hit
+S 7878b8,8 hit
+L 707ab0,8 hit
+S 7879b8,8 hit
+L 707ab8,8 hit
+S 9073c0,8 hit
+L 9073c0,8 hit
+S 787ab8,8 miss eviction
+L 7073c0,8 miss eviction
+S 907380,8 miss eviction
+L 7073c8,8 hit
+S 907388,8 hit
+L 7073d0,8 hit
+S 907390,8 hit
+L 7073d8,8 hit
+S 907398,8 hit
+L 7073e0,8 hit
+S 9073a0,8 hit
+L 7073e8,8 hit
+S 9073a8,8 hit
+L 7073f0,8 hit
+S 9073b0,8 hit
+L 7073f8,8 hit
+S 9073b8,8 hit
+L 907380,8 hit
+S 787b80,8 miss eviction
+L 907388,8 miss eviction
+S 787c80,8 miss eviction
+L 907390,8 hit
+S 787d80,8 miss eviction
+L 907398,8 hit
+S 787e80,8 miss eviction
+L 9073a0,8 hit
+S 787f80,8 miss eviction
+L 9073a8,8 hit
+S 788080,8 miss eviction
+L 9073b0,8 hit
+S 788180,8 miss eviction
+L 9073b8,8 hit
+S 788280,8 miss eviction
+L 7074c0,8 miss
+S 787b88,8 miss eviction
+L 7074c8,8 hit
+S 787c88,8 hit
+L 7074d0,8 hit
+S 787d88,8 hit
+L 7074d8,8 hit
+S 787e88,8 hit
+L 7074e0,8 hit
+S 787f88,8 hit
+L 7074e8,8 hit
+S 788088,8 hit
+L 7074f0,8 hit
+S 788188,8 hit
+L 7074f8,8 hit
+S 788288,8 hit
+L 7075c0,8 miss
+S 787b90,8 hit
+L 7075c8,8 hit
+S 787c90,8 hit
+L 7075d0,8 hit
+S 787d90,8 hit
+L 7075d8,8 hit
+S 787e90,8 hit
+L 7075e0,8 hit
+S 787f90,8 hit
+L 7075e8,8 hit
+S 788090,8 hit
+L 7075f0,8 hit
+S 788190,8 hit
+L 7075f8,8 hit
+S 788290,8 hit
+L 7076c0,8 miss
+S 787b98,8 hit
+L 7076c8,8 hit
+S 787c98,8 hit
+L 7076d0,8 hit
+S 787d98,8 hit
+L 7076d8,8 hit
+S 787e98,8 hit
+L 7076e0,8 hit
+S 787f98,8 hit
+L 7076e8,8 hit
+S 788098,8 hit
+L 7076f0,8 hit
+S 788198,8 hit
+L 7076f8,8 hit
+S 788298,8 hit
+L 7077c0,8 miss
+S 787ba0,8 hit
+L 7077c8,8 hit
+S 787ca0,8 hit
+L 7077d0,8 hit
+S 787da0,8 hit
+L 7077d8,8 hit
+S 787ea0,8 hit
+L 7077e0,8 hit
+S 787fa0,8 hit
+L 7077e8,8 hit
+S 7880a0,8 hit
+L 7077f0,8 hit
+S 7881a0,8 hit
+L 7077f8,8 hit
+S 7882a0,8 hit
+L 7078c0,8 miss
+S 787ba8,8 hit
+L 7078c8,8 hit
+S 787ca8,8 hit
+L 7078d0,8 hit
+S 787da8,8 hit
+L 7078d8,8 hit
+S 787ea8,8 hit
+L 7078e0,8 hit
+S 787fa8,8 hit
+L 7078e8,8 hit
+S 7880a8,8 hit
+L 7078f0,8 hit
+S 7881a8,8 hit
+L 7078f8,8 hit
+S 7882a8,8 hit
+L 7079c0,8 miss
+S 787bb0,8 hit
+L 7079c8,8 hit
+S 787cb0,8 hit
+L 7079d0,8 hit
+S 787db0,8 hit
+L 7079d8,8 hit
+S 787eb0,8 hit
+L 7079e0,8 hit
+S 787fb0,8 hit
+L 7079e8,8 hit
+S 7880b0,8 hit
+L 7079f0,8 hit
+S 7881b0,8 hit
+L 7079f8,8 hit
+S 7882b0,8 hit
+L 707ac0,8 miss
+S 787bb8,8 hit
+L 707ac8,8 hit
+S 787cb8,8 hit
+L 707ad0,8 hit
+S 787db8,8 hit
+L 707ad8,8 hit
+S 787eb8,8 hit
+L 707ae0,8 hit
+S 787fb8,8 hit
+L 707ae8,8 hit
+S 7880b8,8 hit
+L 707af0,8 hit
+S 7881b8,8 hit
+L 707af8,8 hit
+S 7882b8,8 hit
+L 707400,8 miss
+S 907380,8 miss eviction
+L 707408,8 hit
+S 907388,8 hit
+L 707410,8 hit
+S 907390,8 hit
+L 707418,8 hit
+S 907398,8 hit
+L 707420,8 hit
+S 9073a0,8 hit
+L 707428,8 hit
+S 9073a8,8 hit
+L 707430,8 hit
+S 9073b0,8 hit
+L 707438,8 hit
+S 9073b8,8 hit
+L 907380,8 hit
+S 788380,8 miss eviction
+L 907388,8 miss eviction
+S 788480,8 miss eviction
+L 907390,8 hit
+S 788580,8 miss eviction
+L 907398,8 hit
+S 788680,8 miss eviction
+L 9073a0,8 hit
+S 788780,8 miss eviction
+L 9073a8,8 hit
+S 788880,8 miss eviction
+L 9073b0,8 hit
+S 788980,8 miss eviction
+L 9073b8,8 hit
+S 788a80,8 miss eviction
+L 707500,8 miss
+S 788388,8 miss eviction
+L 707508,8 hit
+S 788488,8 hit
+L 707510,8 hit
+S 788588,8 hit
+L 707518,8 hit
+S 788688,8 hit
+L 707520,8 hit
+S 788788,8 hit
+L 707528,8 hit
+S 788888,8 hit
+L 707530,8 hit
+S 788988,8 hit
+L 707538,8 hit
+S 788a88,8 hit
+L 707600,8 miss
+S 788390,8 hit
+L 707608,8 hit
+S 788490,8 hit
+L 707610,8 hit
+S 788590,8 hit
+L 707618,8 hit
+S 788690,8 hit
+L 707620,8 hit
+S 788790,8 hit
+L 707628,8 hit
+S 788890,8 hit
+L 707630,8 hit
+S 788990,8 hit
+L 707638,8 hit
+S 788a90,8 hit
+L 707700,8 miss
+S 788398,8 hit
+L 707708,8 hit
+S 788498,8 hit
+L 707710,8 hit
+S 788598,8 hit
+L 707718,8 hit
+S 788698,8 hit
+L 707720,8 hit
+S 788798,8 hit
+L 707728,8 hit
+S 788898,8 hit
+L 707730,8 hit
+S 788998,8 hit
+L 707738,8 hit
+S 788a98,8 hit
+L 707800,8 miss
+S 7883a0,8 hit
+L 707808,8 hit
+S 7884a0,8 hit
+L 707810,8 hit
+S 7885a0,8 hit
+L 707818,8 hit
+S 7886a0,8 hit
+L 707820,8 hit
+S 7887a0,8 hit
+L 707828,8 hit
+S 7888a0,8 hit
+L 707830,8 hit
+S 7889a0,8 hit
+L 707838,8 hit
+S 788aa0,8 hit
+L 707900,8 miss
+S 7883a8,8 hit
+L 707908,8 hit
+S 7884a8,8 hit
+L 707910,8 hit
+S 7885a8,8 hit
+L 707918,8 hit
+S 7886a8,8 hit
+L 707920,8 hit
+S 7887a8,8 hit
+L 707928,8 hit
+S 7888a8,8 hit
+L 707930,8 hit
+S 7889a8,8 hit
+L 707938,8 hit
+S 788aa8,8 hit
+L 707a00,8 miss
+S 7883b0,8 hit
+L 707a08,8 hit
+S 7884b0,8 hit
+L 707a10,8 hit
+S 7885b0,8 hit
+L 707a18,8 hit
+S 7886b0,8 hit
+L 707a20,8 hit
+S 7887b0,8 hit
+L 707a28,8 hit
+S 7888b0,8 hit
+L 707a30,8 hit
+S 7889b0,8 hit
+L 707a38,8 hit
+S 788ab0,8 hit
+L 707b00,8 miss
+S 7883b8,8 hit
+L 707b08,8 hit
+S 7884b8,8 hit
+L 707b10,8 hit
+S 7885b8,8 hit
+L 707b18,8 hit
+S 7886b8,8 hit
+L 707b20,8 hit
+S 7887b8,8 hit
+L 707b28,8 hit
+S 7888b8,8 hit
+L 707b30,8 hit
+S 7889b8,8 hit
+L 707b38,8 hit
+S 788ab8,8 hit
+L 707440,8 miss
+S 907380,8 miss eviction
+L 707448,8 hit
+S 907388,8 hit
+L 707450,8 hit
+S 907390,8 hit
+L 707458,8 hit
+S 907398,8 hit
+L 707460,8 hit
+S 9073a0,8 hit
+L 707468,8 hit
+S 9073a8,8 hit
+L 707470,8 hit
+S 9073b0,8 hit
+L 707478,8 hit
+S 9073b8,8 hit
+L 907380,8 hit
+S 788b80,8 miss eviction
+L 907388,8 miss eviction
+S 788c80,8 miss eviction
+L 907390,8 hit
+S 788d80,8 miss eviction
+L 907398,8 hit
+S 788e80,8 miss eviction
+L 9073a0,8 hit
+S 788f80,8 miss eviction
+L 9073a8,8 hit
+S 789080,8 miss eviction
+L 9073b0,8 hit
+S 789180,8 miss eviction
+L 9073b8,8 hit
+S 789280,8 miss eviction
+L 707540,8 miss
+S 788b88,8 miss eviction
+L 707548,8 hit
+S 788c88,8 hit
+L 707550,8 hit
+S 788d88,8 hit
+L 707558,8 hit
+S 788e88,8 hit
+L 707560,8 hit
+S 788f88,8 hit
+L 707568,8 hit
+S 789088,8 hit
+L 707570,8 hit
+S 789188,8 hit
+L 707578,8 hit
+S 789288,8 hit
+L 707640,8 miss
+S 788b90,8 hit
+L 707648,8 hit
+S 788c90,8 hit
+L 707650,8 hit
+S 788d90,8 hit
+L 707658,8 hit
+S 788e90,8 hit
+L 707660,8 hit
+S 788f90,8 hit
+L 707668,8 hit
+S 789090,8 hit
+L 707670,8 hit
+S 789190,8 hit
+L 707678,8 hit
+S 789290,8 hit
+L 707740,8 miss
+S 788b98,8 hit
+L 707748,8 hit
+S 788c98,8 hit
+L 707750,8 hit
+S 788d98,8 hit
+L 707758,8 hit
+S 788e98,8 hit
+L 707760,8 hit
+S 788f98,8 hit
+L 707768,8 hit
+S 789098,8 hit
+L 707770,8 hit
+S 789198,8 hit
+L 707778,8 hit
+S 789298,8 hit
+L 707840,8 miss
+S 788ba0,8 hit
+L 707848,8 hit
+S 788ca0,8 hit
+L 707850,8 hit
+S 788da0,8 hit
+L 707858,8 hit
+S 788ea0,8 hit
+L 707860,8 hit
+S 788fa0,8 hit
+L 707868,8 hit
+S 7890a0,8 hit
+L 707870,8 hit
+S 7891a0,8 hit
+L 707878,8 hit
+S 7892a0,8 hit
+L 707940,8 miss
+S 788ba8,8 hit
+L 707948,8 hit
+S 788ca8,8 hit
+L 707950,8 hit
+S 788da8,8 hit
+L 707958,8 hit
+S 788ea8,8 hit
+L 707960,8 hit
+S 788fa8,8 hit
+L 707968,8 hit
+S 7890a8,8 hit
+L 707970,8 hit
+S 7891a8,8 hit
+L 707978,8 hit
+S 7892a8,8 hit
+L 707a40,8 miss
+S 788bb0,8 hit
+L 707a48,8 hit
+S 788cb0,8 hit
+L 707a50,8 hit
+S 788db0,8 hit
+L 707a58,8 hit
+S 788eb0,8 hit
+L 707a60,8 hit
+S 788fb0,8 hit
+L 707a68,8 hit
+S 7890b0,8 hit
+L 707a70,8 hit
+S 7891b0,8 hit
+L 707a78,8 hit
+S 7892b0,8 hit
+L 707b40,8 miss
+S 788bb8,8 hit
+L 707b48,8 hit
+S 788cb8,8 hit
+L 707b50,8 hit
+S 788db8,8 hit
+L 707b58,8 hit
+S 788eb8,8 hit
+L 707b60,8 hit
+S 788fb8,8 hit
+L 707b68,8 hit
+S 7890b8,8 hit
+L 707b70,8 hit
+S 7891b8,8 hit
+L 707b78,8 hit
+S 7892b8,8 hit
+L 707b80,8 miss eviction
+S 907380,8 miss eviction
+L 707b88,8 miss eviction
+S 907388,8 miss eviction
+L 707b90,8 miss eviction
+S 907390,8 miss eviction
+L 707b98,8 miss eviction
+S 907398,8 miss eviction
+L 707ba0,8 miss eviction
+S 9073a0,8 miss eviction
+L 707ba8,8 miss eviction
+S 9073a8,8 miss eviction
+L 707bb0,8 miss eviction
+S 9073b0,8 miss eviction
+L 707bb8,8 miss eviction
+S 9073b8,8 miss eviction
+L 907380,8 hit
+S 7873c0,8 miss eviction
+L 907388,8 hit
+S 7874c0,8 miss eviction
+L 907390,8 hit
+S 7875c0,8 miss eviction
+L 907398,8 hit
+S 7876c0,8 miss eviction
+L 9073a0,8 hit
+S 7877c0,8 miss eviction
+L 9073a8,8 hit
+S 7878c0,8 miss eviction
+L 9073b0,8 hit
+S 7879c0,8 miss eviction
+L 9073b8,8 hit
+S 787ac0,8 miss eviction
+L 707c80,8 miss eviction
+S 7873c8,8 hit
+L 707c88,8 hit
+S 7874c8,8 hit
+L 707c90,8 hit
+S 7875c8,8 hit
+L 707c98,8 hit
+S 7876c8,8 hit
+L 707ca0,8 hit
+S 7877c8,8 hit
+L 707ca8,8 hit
+S 7878c8,8 hit
+L 707cb0,8 hit
+S 7879c8,8 hit
+L 707cb8,8 hit
+S 787ac8,8 hit
+L 707d80,8 miss eviction
+S 7873d0,8 hit
+L 707d88,8 hit
+S 7874d0,8 hit
+L 707d90,8 hit
+S 7875d0,8 hit
+L 707d98,8 hit
+S 7876d0,8 hit
+L 707da0,8 hit
+S 7877d0,8 hit
+L 707da8,8 hit
+S 7878d0,8 hit
+L 707db0,8 hit
+S 7879d0,8 hit
+L 707db8,8 hit
+S 787ad0,8 hit
+L 707e80,8 miss eviction
+S 7873d8,8 hit
+L 707e88,8 hit
+S 7874d8,8 hit
+L 707e90,8 hit
+S 7875d8,8 hit
+L 707e98,8 hit
+S 7876d8,8 hit
+L 707ea0,8 hit
+S 7877d8,8 hit
+L 707ea8,8 hit
+S 7878d8,8 hit
+L 707eb0,8 hit
+S 7879d8,8 hit
+L 707eb8,8 hit
+S 787ad8,8 hit
+L 707f80,8 miss eviction
+S 7873e0,8 hit
+L 707f88,8 hit
+S 7874e0,8 hit
+L 707f90,8 hit
+S 7875e0,8 hit
+L 707f98,8 hit
+S 7876e0,8 hit
+L 707fa0,8 hit
+S 7877e0,8 hit
+L 707fa8,8 hit
+S 7878e0,8 hit
+L 707fb0,8 hit
+S 7879e0,8 hit
+L 707fb8,8 hit
+S 787ae0,8 hit
+L 708080,8 miss eviction
+S 7873e8,8 hit
+L 708088,8 hit
+S 7874e8,8 hit
+L 708090,8 hit
+S 7875e8,8 hit
+L 708098,8 hit
+S 7876e8,8 hit
+L 7080a0,8 hit
+S 7877e8,8 hit
+L 7080a8,8 hit
+S 7878e8,8 hit
+L 7080b0,8 hit
+S 7879e8,8 hit
+L 7080b8,8 hit
+S 787ae8,8 hit
+L 708180,8 miss eviction
+S 7873f0,8 hit
+L 708188,8 hit
+S 7874f0,8 hit
+L 708190,8 hit
+S 7875f0,8 hit
+L 708198,8 hit
+S 7876f0,8 hit
+L 7081a0,8 hit
+S 7877f0,8 hit
+L 7081a8,8 hit
+S 7878f0,8 hit
+L 7081b0,8 hit
+S 7879f0,8 hit
+L 7081b8,8 hit
+S 787af0,8 hit
+L 708280,8 miss eviction
+S 7873f8,8 hit
+L 708288,8 hit
+S 7874f8,8 hit
+L 708290,8 hit
+S 7875f8,8 hit
+L 708298,8 hit
+S 7876f8,8 hit
+L 7082a0,8 hit
+S 7877f8,8 hit
+L 7082a8,8 hit
+S 7878f8,8 hit
+L 7082b0,8 hit
+S 7879f8,8 hit
+L 7082b8,8 hit
+S 787af8,8 hit
+L 707bc0,8 miss eviction
+S 907380,8 hit
+L 707bc8,8 hit
+S 907388,8 hit
+L 707bd0,8 hit
+S 907390,8 hit
+L 707bd8,8 hit
+S 907398,8 hit
+L 707be0,8 hit
+S 9073a0,8 hit
+L 707be8,8 hit
+S 9073a8,8 hit
+L 707bf0,8 hit
+S 9073b0,8 hit
+L 707bf8,8 hit
+S 9073b8,8 hit
+L 907380,8 hit
+S 787bc0,8 miss eviction
+L 907388,8 hit
+S 787cc0,8 miss eviction
+L 907390,8 hit
+S 787dc0,8 miss eviction
+L 907398,8 hit
+S 787ec0,8 miss eviction
+L 9073a0,8 hit
+S 787fc0,8 miss eviction
+L 9073a8,8 hit
+S 7880c0,8 miss eviction
+L 9073b0,8 hit
+S 7881c0,8 miss eviction
+L 9073b8,8 hit
+S 7882c0,8 miss eviction
+L 707cc0,8 miss eviction
+S 787bc8,8 hit
+L 707cc8,8 hit
+S 9073c0,8 miss eviction
+L 707cd0,8 hit
+S 787dc8,8 hit
+L 707cd8,8 hit
+S 787ec8,8 hit
+L 707ce0,8 hit
+S 787fc8,8 hit
+L 707ce8,8 hit
+S 7880c8,8 hit
+L 707cf0,8 hit
+S 7881c8,8 hit
+L 707cf8,8 hit
+S 7882c8,8 hit
+L 9073c0,8 hit
+S 787cc8,8 miss eviction
+L 707dc0,8 miss eviction
+S 787bd0,8 miss eviction
+L 707dc8,8 hit
+S 787cd0,8 hit
+L 707dd0,8 hit
+S 9073c0,8 miss eviction
+L 707dd8,8 hit
+S 787ed0,8 hit
+L 707de0,8 hit
+S 787fd0,8 hit
+L 707de8,8 hit
+S 7880d0,8 hit
+L 707df0,8 hit
+S 7881d0,8 hit
+L 707df8,8 hit
+S 7882d0,8 hit
+L 9073c0,8 hit
+S 787dd0,8 miss eviction
+L 707ec0,8 miss eviction
+S 787bd8,8 miss eviction
+L 707ec8,8 hit
+S 787cd8,8 hit
+L 707ed0,8 hit
+S 787dd8,8 hit
+L 707ed8,8 hit
+S 9073c0,8 miss eviction
+L 707ee0,8 hit
+S 787fd8,8 hit
+L 707ee8,8 hit
+S 7880d8,8 hit
+L 707ef0,8 hit
+S 7881d8,8 hit
+L 707ef8,8 hit
+S 7882d8,8 hit
+L 9073c0,8 hit
+S 787ed8,8 miss eviction
+L 707fc0,8 miss eviction
+S 787be0,8 miss eviction
+L 707fc8,8 hit
+S 787ce0,8 hit
+L 707fd0,8 hit
+S 787de0,8 hit
+L 707fd8,8 hit
+S 787ee0,8 hit
+L 707fe0,8 hit
+S 9073c0,8 miss eviction
+L 707fe8,8 hit
+S 7880e0,8 hit
+L 707ff0,8 hit
+S 7881e0,8 hit
+L 707ff8,8 hit
+S 7882e0,8 hit
+L 9073c0,8 hit
+S 787fe0,8 miss eviction
+L 7080c0,8 miss eviction
+S 787be8,8 miss eviction
+L 7080c8,8 hit
+S 787ce8,8 hit
+L 7080d0,8 hit
+S 787de8,8 hit
+L 7080d8,8 hit
+S 787ee8,8 hit
+L 7080e0,8 hit
+S 787fe8,8 hit
+L 7080e8,8 hit
+S 9073c0,8 miss eviction
+L 7080f0,8 hit
+S 7881e8,8 hit
+L 7080f8,8 hit
+S 7882e8,8 hit
+L 9073c0,8 hit
+S 7880e8,8 miss eviction
+L 7081c0,8 miss eviction
+S 787bf0,8 miss eviction
+L 7081c8,8 hit
+S 787cf0,8 hit
+L 7081d0,8 hit
+S 787df0,8 hit
+L 7081d8,8 hit
+S 787ef0,8 hit
+L 7081e0,8 hit
+S 787ff0,8 hit
+L 7081e8,8 hit
+S 7880f0,8 hit
+L 7081f0,8 hit
+S 9073c0,8 miss eviction
+L 7081f8,8 hit
+S 7882f0,8 hit
+L 9073c0,8 hit
+S 7881f0,8 miss eviction
+L 7082c0,8 miss eviction
+S 787bf8,8 miss eviction
+L 7082c8,8 hit
+S 787cf8,8 hit
+L 7082d0,8 hit
+S 787df8,8 hit
+L 7082d8,8 hit
+S 787ef8,8 hit
+L 7082e0,8 hit
+S 787ff8,8 hit
+L 7082e8,8 hit
+S 7880f8,8 hit
+L 7082f0,8 hit
+S 7881f8,8 hit
+L 7082f8,8 hit
+S 9073c0,8 miss eviction
+L 9073c0,8 hit
+S 7882f8,8 miss eviction
+L 707c00,8 miss eviction
+S 907380,8 hit
+L 707c08,8 hit
+S 907388,8 hit
+L 707c10,8 hit
+S 907390,8 hit
+L 707c18,8 hit
+S 907398,8 hit
+L 707c20,8 hit
+S 9073a0,8 hit
+L 707c28,8 hit
+S 9073a8,8 hit
+L 707c30,8 hit
+S 9073b0,8 hit
+L 707c38,8 hit
+S 9073b8,8 hit
+L 907380,8 hit
+S 7883c0,8 miss eviction
+L 907388,8 hit
+S 7884c0,8 miss eviction
+L 907390,8 hit
+S 7885c0,8 miss eviction
+L 907398,8 hit
+S 7886c0,8 miss eviction
+L 9073a0,8 hit
+S 7887c0,8 miss eviction
+L 9073a8,8 hit
+S 7888c0,8 miss eviction
+L 9073b0,8 hit
+S 7889c0,8 miss eviction
+L 9073b8,8 hit
+S 788ac0,8 miss eviction
+L 707d00,8 miss eviction
+S 7883c8,8 hit
+L 707d08,8 hit
+S 7884c8,8 hit
+L 707d10,8 hit
+S 7885c8,8 hit
+L 707d18,8 hit
+S 7886c8,8 hit
+L 707d20,8 hit
+S 7887c8,8 hit
+L 707d28,8 hit
+S 7888c8,8 hit
+L 707d30,8 hit
+S 7889c8,8 hit
+L 707d38,8 hit
+S 788ac8,8 hit
+L 707e00,8 miss eviction
+S 7883d0,8 hit
+L 707e08,8 hit
+S 7884d0,8 hit
+L 707e10,8 hit
+S 7885d0,8 hit
+L 707e18,8 hit
+S 7886d0,8 hit
+L 707e20,8 hit
+S 7887d0,8 hit
+L 707e28,8 hit
+S 7888d0,8 hit
+L 707e30,8 hit
+S 7889d0,8 hit
+L 707e38,8 hit
+S 788ad0,8 hit
+L 707f00,8 miss eviction
+S 7883d8,8 hit
+L 707f08,8 hit
+S 7884d8,8 hit
+L 707f10,8 hit
+S 7885d8,8 hit
+L 707f18,8 hit
+S 7886d8,8 hit
+L 707f20,8 hit
+S 7887d8,8 hit
+L 707f28,8 hit
+S 7888d8,8 hit
+L 707f30,8 hit
+S 7889d8,8 hit
+L 707f38,8 hit
+S 788ad8,8 hit
+L 708000,8 miss eviction
+S 7883e0,8 hit
+L 708008,8 hit
+S 7884e0,8 hit
+L 708010,8 hit
+S 7885e0,8 hit
+L 708018,8 hit
+S 7886e0,8 hit
+L 708020,8 hit
+S 7887e0,8 hit
+L 708028,8 hit
+S 7888e0,8 hit
+L 708030,8 hit
+S 7889e0,8 hit
+L 708038,8 hit
+S 788ae0,8 hit
+L 708100,8 miss eviction
+S 7883e8,8 hit
+L 708108,8 hit
+S 7884e8,8 hit
+L 708110,8 hit
+S 7885e8,8 hit
+L 708118,8 hit
+S 7886e8,8 hit
+L 708120,8 hit
+S 7887e8,8 hit
+L 708128,8 hit
+S 7888e8,8 hit
+L 708130,8 hit
+S 7889e8,8 hit
+L 708138,8 hit
+S 788ae8,8 hit
+L 708200,8 miss eviction
+S 7883f0,8 hit
+L 708208,8 hit
+S 7884f0,8 hit
+L 708210,8 hit
+S 7885f0,8 hit
+L 708218,8 hit
+S 7886f0,8 hit
+L 708220,8 hit
+S 7887f0,8 hit
+L 708228,8 hit
+S 7888f0,8 hit
+L 708230,8 hit
+S 7889f0,8 hit
+L 708238,8 hit
+S 788af0,8 hit
+L 708300,8 miss eviction
+S 7883f8,8 hit
+L 708308,8 hit
+S 7884f8,8 hit
+L 708310,8 hit
+S 7885f8,8 hit
+L 708318,8 hit
+S 7886f8,8 hit
+L 708320,8 hit
+S 7887f8,8 hit
+L 708328,8 hit
+S 7888f8,8 hit
+L 708330,8 hit
+S 7889f8,8 hit
+L 708338,8 hit
+S 788af8,8 hit
+L 707c40,8 miss eviction
+S 907380,8 hit
+L 707c48,8 hit
+S 907388,8 hit
+L 707c50,8 hit
+S 907390,8 hit
+L 707c58,8 hit
+S 907398,8 hit
+L 707c60,8 hit
+S 9073a0,8 hit
+L 707c68,8 hit
+S 9073a8,8 hit
+L 707c70,8 hit
+S 9073b0,8 hit
+L 707c78,8 hit
+S 9073b8,8 hit
+L 907380,8 hit
+S 788bc0,8 miss eviction
+L 907388,8 hit
+S 788cc0,8 miss eviction
+L 907390,8 hit
+S 788dc0,8 miss eviction
+L 907398,8 hit
+S 788ec0,8 miss eviction
+L 9073a0,8 hit
+S 788fc0,8 miss eviction
+L 9073a8,8 hit
+S 7890c0,8 miss eviction
+L 9073b0,8 hit
+S 7891c0,8 miss eviction
+L 9073b8,8 hit
+S 7892c0,8 miss eviction
+L 707d40,8 miss eviction
+S 788bc8,8 hit
+L 707d48,8 hit
+S 788cc8,8 hit
+L 707d50,8 hit
+S 788dc8,8 hit
+L 707d58,8 hit
+S 788ec8,8 hit
+L 707d60,8 hit
+S 788fc8,8 hit
+L 707d68,8 hit
+S 7890c8,8 hit
+L 707d70,8 hit
+S 7891c8,8 hit
+L 707d78,8 hit
+S 7892c8,8 hit
+L 707e40,8 miss eviction
+S 788bd0,8 hit
+L 707e48,8 hit
+S 788cd0,8 hit
+L 707e50,8 hit
+S 788dd0,8 hit
+L 707e58,8 hit
+S 788ed0,8 hit
+L 707e60,8 hit
+S 788fd0,8 hit
+L 707e68,8 hit
+S 7890d0,8 hit
+L 707e70,8 hit
+S 7891d0,8 hit
+L 707e78,8 hit
+S 7892d0,8 hit
+L 707f40,8 miss eviction
+S 788bd8,8 hit
+L 707f48,8 hit
+S 788cd8,8 hit
+L 707f50,8 hit
+S 788dd8,8 hit
+L 707f58,8 hit
+S 788ed8,8 hit
+L 707f60,8 hit
+S 788fd8,8 hit
+L 707f68,8 hit
+S 7890d8,8 hit
+L 707f70,8 hit
+S 7891d8,8 hit
+L 707f78,8 hit
+S 7892d8,8 hit
+L 708040,8 miss eviction
+S 788be0,8 hit
+L 708048,8 hit
+S 788ce0,8 hit
+L 708050,8 hit
+S 788de0,8 hit
+L 708058,8 hit
+S 788ee0,8 hit
+L 708060,8 hit
+S 788fe0,8 hit
+L 708068,8 hit
+S 7890e0,8 hit
+L 708070,8 hit
+S 7891e0,8 hit
+L 708078,8 hit
+S 7892e0,8 hit
+L 708140,8 miss eviction
+S 788be8,8 hit
+L 708148,8 hit
+S 788ce8,8 hit
+L 708150,8 hit
+S 788de8,8 hit
+L 708158,8 hit
+S 788ee8,8 hit
+L 708160,8 hit
+S 788fe8,8 hit
+L 708168,8 hit
+S 7890e8,8 hit
+L 708170,8 hit
+S 7891e8,8 hit
+L 708178,8 hit
+S 7892e8,8 hit
+L 708240,8 miss eviction
+S 788bf0,8 hit
+L 708248,8 hit
+S 788cf0,8 hit
+L 708250,8 hit
+S 788df0,8 hit
+L 708258,8 hit
+S 788ef0,8 hit
+L 708260,8 hit
+S 788ff0,8 hit
+L 708268,8 hit
+S 7890f0,8 hit
+L 708270,8 hit
+S 7891f0,8 hit
+L 708278,8 hit
+S 7892f0,8 hit
+L 708340,8 miss eviction
+S 788bf8,8 hit
+L 708348,8 hit
+S 788cf8,8 hit
+L 708350,8 hit
+S 788df8,8 hit
+L 708358,8 hit
+S 788ef8,8 hit
+L 708360,8 hit
+S 788ff8,8 hit
+L 708368,8 hit
+S 7890f8,8 hit
+L 708370,8 hit
+S 7891f8,8 hit
+L 708378,8 hit
+S 7892f8,8 hit
+L 708380,8 miss eviction
+S 907380,8 miss eviction
+L 708388,8 miss eviction
+S 907388,8 miss eviction
+L 708390,8 miss eviction
+S 907390,8 miss eviction
+L 708398,8 miss eviction
+S 907398,8 miss eviction
+L 7083a0,8 miss eviction
+S 9073a0,8 miss eviction
+L 7083a8,8 miss eviction
+S 9073a8,8 miss eviction
+L 7083b0,8 miss eviction
+S 9073b0,8 miss eviction
+L 7083b8,8 miss eviction
+S 9073b8,8 miss eviction
+L 907380,8 hit
+S 787400,8 miss eviction
+L 907388,8 hit
+S 787500,8 miss eviction
+L 907390,8 hit
+S 787600,8 miss eviction
+L 907398,8 hit
+S 787700,8 miss eviction
+L 9073a0,8 hit
+S 787800,8 miss eviction
+L 9073a8,8 hit
+S 787900,8 miss eviction
+L 9073b0,8 hit
+S 787a00,8 miss eviction
+L 9073b8,8 hit
+S 787b00,8 miss eviction
+L 708480,8 miss eviction
+S 787408,8 hit
+L 708488,8 hit
+S 787508,8 hit
+L 708490,8 hit
+S 787608,8 hit
+L 708498,8 hit
+S 787708,8 hit
+L 7084a0,8 hit
+S 787808,8 hit
+L 7084a8,8 hit
+S 787908,8 hit
+L 7084b0,8 hit
+S 787a08,8 hit
+L 7084b8,8 hit
+S 787b08,8 hit
+L 708580,8 miss eviction
+S 787410,8 hit
+L 708588,8 hit
+S 787510,8 hit
+L 708590,8 hit
+S 787610,8 hit
+L 708598,8 hit
+S 787710,8 hit
+L 7085a0,8 hit
+S 787810,8 hit
+L 7085a8,8 hit
+S 787910,8 hit
+L 7085b0,8 hit
+S 787a10,8 hit
+L 7085b8,8 hit
+S 787b10,8 hit
+L 708680,8 miss eviction
+S 787418,8 hit
+L 708688,8 hit
+S 787518,8 hit
+L 708690,8 hit
+S 787618,8 hit
+L 708698,8 hit
+S 787718,8 hit
+L 7086a0,8 hit
+S 787818,8 hit
+L 7086a8,8 hit
+S 787918,8 hit
+L 7086b0,8 hit
+S 787a18,8 hit
+L 7086b8,8 hit
+S 787b18,8 hit
+L 708780,8 miss eviction
+S 787420,8 hit
+L 708788,8 hit
+S 787520,8 hit
+L 708790,8 hit
+S 787620,8 hit
+L 708798,8 hit
+S 787720,8 hit
+L 7087a0,8 hit
+S 787820,8 hit
+L 7087a8,8 hit
+S 787920,8 hit
+L 7087b0,8 hit
+S 787a20,8 hit
+L 7087b8,8 hit
+S 787b20,8 hit
+L 708880,8 miss eviction
+S 787428,8 hit
+L 708888,8 hit
+S 787528,8 hit
+L 708890,8 hit
+S 787628,8 hit
+L 708898,8 hit
+S 787728,8 hit
+L 7088a0,8 hit
+S 787828,8 hit
+L 7088a8,8 hit
+S 787928,8 hit
+L 7088b0,8 hit
+S 787a28,8 hit
+L 7088b8,8 hit
+S 787b28,8 hit
+L 708980,8 miss eviction
+S 787430,8 hit
+L 708988,8 hit
+S 787530,8 hit
+L 708990,8 hit
+S 787630,8 hit
+L 708998,8 hit
+S 787730,8 hit
+L 7089a0,8 hit
+S 787830,8 hit
+L 7089a8,8 hit
+S 787930,8 hit
+L 7089b0,8 hit
+S 787a30,8 hit
+L 7089b8,8 hit
+S 787b30,8 hit
+L 708a80,8 miss eviction
+S 787438,8 hit
+L 708a88,8 hit
+S 787538,8 hit
+L 708a90,8 hit
+S 787638,8 hit
+L 708a98,8 hit
+S 787738,8 hit
+L 708aa0,8 hit
+S 787838,8 hit
+L 708aa8,8 hit
+S 787938,8 hit
+L 708ab0,8 hit
+S 787a38,8 hit
+L 708ab8,8 hit
+S 787b38,8 hit
+L 7083c0,8 miss eviction
+S 907380,8 hit
+L 7083c8,8 hit
+S 907388,8 hit
+L 7083d0,8 hit
+S 907390,8 hit
+L 7083d8,8 hit
+S 907398,8 hit
+L 7083e0,8 hit
+S 9073a0,8 hit
+L 7083e8,8 hit
+S 9073a8,8 hit
+L 7083f0,8 hit
+S 9073b0,8 hit
+L 7083f8,8 hit
+S 9073b8,8 hit
+L 907380,8 hit
+S 787c00,8 miss eviction
+L 907388,8 hit
+S 787d00,8 miss eviction
+L 907390,8 hit
+S 787e00,8 miss eviction
+L 907398,8 hit
+S 787f00,8 miss eviction
+L 9073a0,8 hit
+S 788000,8 miss eviction
+L 9073a8,8 hit
+S 788100,8 miss eviction
+L 9073b0,8 hit
+S 788200,8 miss eviction
+L 9073b8,8 hit
+S 788300,8 miss eviction
+L 7084c0,8 miss eviction
+S 787c08,8 hit
+L 7084c8,8 hit
+S 787d08,8 hit
+L 7084d0,8 hit
+S 787e08,8 hit
+L 7084d8,8 hit
+S 787f08,8 hit
+L 7084e0,8 hit
+S 788008,8 hit
+L 7084e8,8 hit
+S 788108,8 hit
+L 7084f0,8 hit
+S 788208,8 hit
+L 7084f8,8 hit
+S 788308,8 hit
+L 7085c0,8 miss eviction
+S 787c10,8 hit
+L 7085c8,8 hit
+S 787d10,8 hit
+L 7085d0,8 hit
+S 787e10,8 hit
+L 7085d8,8 hit
+S 787f10,8 hit
+L 7085e0,8 hit
+S 788010,8 hit
+L 7085e8,8 hit
+S 788110,8 hit
+L 7085f0,8 hit
+S 788210,8 hit
+L 7085f8,8 hit
+S 788310,8 hit
+L 7086c0,8 miss eviction
+S 787c18,8 hit
+L 7086c8,8 hit
+S 787d18,8 hit
+L 7086d0,8 hit
+S 787e18,8 hit
+L 7086d8,8 hit
+S 787f18,8 hit
+L 7086e0,8 hit
+S 788018,8 hit
+L 7086e8,8 hit
+S 788118,8 hit
+L 7086f0,8 hit
+S 788218,8 hit
+L 7086f8,8 hit
+S 788318,8 hit
+L 7087c0,8 miss eviction
+S 787c20,8 hit
+L 7087c8,8 hit
+S 787d20,8 hit
+L 7087d0,8 hit
+S 787e20,8 hit
+L 7087d8,8 hit
+S 787f20,8 hit
+L 7087e0,8 hit
+S 788020,8 hit
+L 7087e8,8 hit
+S 788120,8 hit
+L 7087f0,8 hit
+S 788220,8 hit
+L 7087f8,8 hit
+S 788320,8 hit
+L 7088c0,8 miss eviction
+S 787c28,8 hit
+L 7088c8,8 hit
+S 787d28,8 hit
+L 7088d0,8 hit
+S 787e28,8 hit
+L 7088d8,8 hit
+S 787f28,8 hit
+L 7088e0,8 hit
+S 788028,8 hit
+L 7088e8,8 hit
+S 788128,8 hit
+L 7088f0,8 hit
+S 788228,8 hit
+L 7088f8,8 hit
+S 788328,8 hit
+L 7089c0,8 miss eviction
+S 787c30,8 hit
+L 7089c8,8 hit
+S 787d30,8 hit
+L 7089d0,8 hit
+S 787e30,8 hit
+L 7089d8,8 hit
+S 787f30,8 hit
+L 7089e0,8 hit
+S 788030,8 hit
+L 7089e8,8 hit
+S 788130,8 hit
+L 7089f0,8 hit
+S 788230,8 hit
+L 7089f8,8 hit
+S 788330,8 hit
+L 708ac0,8 miss eviction
+S 787c38,8 hit
+L 708ac8,8 hit
+S 787d38,8 hit
+L 708ad0,8 hit
+S 787e38,8 hit
+L 708ad8,8 hit
+S 787f38,8 hit
+L 708ae0,8 hit
+S 788038,8 hit
+L 708ae8,8 hit
+S 788138,8 hit
+L 708af0,8 hit
+S 788238,8 hit
+L 708af8,8 hit
+S 788338,8 hit
+L 708400,8 miss eviction
+S 907380,8 hit
+L 708408,8 hit
+S 907388,8 hit
+L 708410,8 hit
+S 907390,8 hit
+L 708418,8 hit
+S 907398,8 hit
+L 708420,8 hit
+S 9073a0,8 hit
+L 708428,8 hit
+S 9073a8,8 hit
+L 708430,8 hit
+S 9073b0,8 hit
+L 708438,8 hit
+S 9073b8,8 hit
+L 907380,8 hit
+S 788400,8 miss eviction
+L 907388,8 hit
+S 788500,8 miss eviction
+L 907390,8 hit
+S 788600,8 miss eviction
+L 907398,8 hit
+S 788700,8 miss eviction
+L 9073a0,8 hit
+S 788800,8 miss eviction
+L 9073a8,8 hit
+S 788900,8 miss eviction
+L 9073b0,8 hit
+S 788a00,8 miss eviction
+L 9073b8,8 hit
+S 788b00,8 miss eviction
+L 708500,8 miss eviction
+S 788408,8 hit
+L 708508,8 hit
+S 9073c0,8 miss eviction
+L 708510,8 hit
+S 788608,8 hit
+L 708518,8 hit
+S 788708,8 hit
+L 708520,8 hit
+S 788808,8 hit
+L 708528,8 hit
+S 788908,8 hit
+L 708530,8 hit
+S 788a08,8 hit
+L 708538,8 hit
+S 788b08,8 hit
+L 9073c0,8 hit
+S 788508,8 miss eviction
+L 708600,8 miss eviction
+S 788410,8 hit
+L 708608,8 hit
+S 788510,8 hit
+L 708610,8 hit
+S 9073c0,8 hit
+L 708618,8 hit
+S 788710,8 hit
+L 708620,8 hit
+S 788810,8 hit
+L 708628,8 hit
+S 788910,8 hit
+L 708630,8 hit
+S 788a10,8 hit
+L 708638,8 hit
+S 788b10,8 hit
+L 9073c0,8 hit
+S 788610,8 miss eviction
+L 708700,8 miss eviction
+S 788418,8 hit
+L 708708,8 hit
+S 788518,8 hit
+L 708710,8 hit
+S 788618,8 hit
+L 708718,8 hit
+S 9073c0,8 hit
+L 708720,8 hit
+S 788818,8 hit
+L 708728,8 hit
+S 788918,8 hit
+L 708730,8 hit
+S 788a18,8 hit
+L 708738,8 hit
+S 788b18,8 hit
+L 9073c0,8 hit
+S 788718,8 miss eviction
+L 708800,8 miss eviction
+S 788420,8 hit
+L 708808,8 hit
+S 788520,8 hit
+L 708810,8 hit
+S 788620,8 hit
+L 708818,8 hit
+S 788720,8 hit
+L 708820,8 hit
+S 9073c0,8 hit
+L 708828,8 hit
+S 788920,8 hit
+L 708830,8 hit
+S 788a20,8 hit
+L 708838,8 hit
+S 788b20,8 hit
+L 9073c0,8 hit
+S 788820,8 miss eviction
+L 708900,8 miss eviction
+S 788428,8 hit
+L 708908,8 hit
+S 788528,8 hit
+L 708910,8 hit
+S 788628,8 hit
+L 708918,8 hit
+S 788728,8 hit
+L 708920,8 hit
+S 788828,8 hit
+L 708928,8 hit
+S 9073c0,8 hit
+L 708930,8 hit
+S 788a28,8 hit
+L 708938,8 hit
+S 788b28,8 hit
+L 9073c0,8 hit
+S 788928,8 miss eviction
+L 708a00,8 miss eviction
+S 788430,8 hit
+L 708a08,8 hit
+S 788530,8 hit
+L 708a10,8 hit
+S 788630,8 hit
+L 708a18,8 hit
+S 788730,8 hit
+L 708a20,8 hit
+S 788830,8 hit
+L 708a28,8 hit
+S 788930,8 hit
+L 708a30,8 hit
+S 9073c0,8 hit
+L 708a38,8 hit
+S 788b30,8 hit
+L 9073c0,8 hit
+S 788a30,8 miss eviction
+L 708b00,8 miss eviction
+S 788438,8 hit
+L 708b08,8 hit
+S 788538,8 hit
+L 708b10,8 hit
+S 788638,8 hit
+L 708b18,8 hit
+S 788738,8 hit
+L 708b20,8 hit
+S 788838,8 hit
+L 708b28,8 hit
+S 788938,8 hit
+L 708b30,8 hit
+S 788a38,8 hit
+L 708b38,8 hit
+S 9073c0,8 hit
+L 9073c0,8 hit
+S 788b38,8 miss eviction
+L 708440,8 miss eviction
+S 907380,8 hit
+L 708448,8 hit
+S 907388,8 hit
+L 708450,8 hit
+S 907390,8 hit
+L 708458,8 hit
+S 907398,8 hit
+L 708460,8 hit
+S 9073a0,8 hit
+L 708468,8 hit
+S 9073a8,8 hit
+L 708470,8 hit
+S 9073b0,8 hit
+L 708478,8 hit
+S 9073b8,8 hit
+L 907380,8 hit
+S 788c00,8 miss eviction
+L 907388,8 hit
+S 788d00,8 miss eviction
+L 907390,8 hit
+S 788e00,8 miss eviction
+L 907398,8 hit
+S 788f00,8 miss eviction
+L 9073a0,8 hit
+S 789000,8 miss eviction
+L 9073a8,8 hit
+S 789100,8 miss eviction
+L 9073b0,8 hit
+S 789200,8 miss eviction
+L 9073b8,8 hit
+S 789300,8 miss eviction
+L 708540,8 miss eviction
+S 788c08,8 hit
+L 708548,8 hit
+S 788d08,8 hit
+L 708550,8 hit
+S 788e08,8 hit
+L 708558,8 hit
+S 788f08,8 hit
+L 708560,8 hit
+S 789008,8 hit
+L 708568,8 hit
+S 789108,8 hit
+L 708570,8 hit
+S 789208,8 hit
+L 708578,8 hit
+S 789308,8 hit
+L 708640,8 miss eviction
+S 788c10,8 hit
+L 708648,8 hit
+S 788d10,8 hit
+L 708650,8 hit
+S 788e10,8 hit
+L 708658,8 hit
+S 788f10,8 hit
+L 708660,8 hit
+S 789010,8 hit
+L 708668,8 hit
+S 789110,8 hit
+L 708670,8 hit
+S 789210,8 hit
+L 708678,8 hit
+S 789310,8 hit
+L 708740,8 miss eviction
+S 788c18,8 hit
+L 708748,8 hit
+S 788d18,8 hit
+L 708750,8 hit
+S 788e18,8 hit
+L 708758,8 hit
+S 788f18,8 hit
+L 708760,8 hit
+S 789018,8 hit
+L 708768,8 hit
+S 789118,8 hit
+L 708770,8 hit
+S 789218,8 hit
+L 708778,8 hit
+S 789318,8 hit
+L 708840,8 miss eviction
+S 788c20,8 hit
+L 708848,8 hit
+S 788d20,8 hit
+L 708850,8 hit
+S 788e20,8 hit
+L 708858,8 hit
+S 788f20,8 hit
+L 708860,8 hit
+S 789020,8 hit
+L 708868,8 hit
+S 789120,8 hit
+L 708870,8 hit
+S 789220,8 hit
+L 708878,8 hit
+S 789320,8 hit
+L 708940,8 miss eviction
+S 788c28,8 hit
+L 708948,8 hit
+S 788d28,8 hit
+L 708950,8 hit
+S 788e28,8 hit
+L 708958,8 hit
+S 788f28,8 hit
+L 708960,8 hit
+S 789028,8 hit
+L 708968,8 hit
+S 789128,8 hit
+L 708970,8 hit
+S 789228,8 hit
+L 708978,8 hit
+S 789328,8 hit
+L 708a40,8 miss eviction
+S 788c30,8 hit
+L 708a48,8 hit
+S 788d30,8 hit
+L 708a50,8 hit
+S 788e30,8 hit
+L 708a58,8 hit
+S 788f30,8 hit
+L 708a60,8 hit
+S 789030,8 hit
+L 708a68,8 hit
+S 789130,8 hit
+L 708a70,8 hit
+S 789230,8 hit
+L 708a78,8 hit
+S 789330,8 hit
+L 708b40,8 miss eviction
+S 788c38,8 hit
+L 708b48,8 hit
+S 788d38,8 hit
+L 708b50,8 hit
+S 788e38,8 hit
+L 708b58,8 hit
+S 788f38,8 hit
+L 708b60,8 hit
+S 789038,8 hit
+L 708b68,8 hit
+S 789138,8 hit
+L 708b70,8 hit
+S 789238,8 hit
+L 708b78,8 hit
+S 789338,8 hit
+L 708b80,8 miss eviction
+S 907380,8 miss eviction
+L 708b88,8 miss eviction
+S 907388,8 miss eviction
+L 708b90,8 miss eviction
+S 907390,8 miss eviction
+L 708b98,8 miss eviction
+S 907398,8 miss eviction
+L 708ba0,8 miss eviction
+S 9073a0,8 miss eviction
+L 708ba8,8 miss eviction
+S 9073a8,8 miss eviction
+L 708bb0,8 miss eviction
+S 9073b0,8 miss eviction
+L 708bb8,8 miss eviction
+S 9073b8,8 miss eviction
+L 907380,8 hit
+S 787440,8 miss eviction
+L 907388,8 hit
+S 787540,8 miss eviction
+L 907390,8 hit
+S 787640,8 miss eviction
+L 907398,8 hit
+S 787740,8 miss eviction
+L 9073a0,8 hit
+S 787840,8 miss eviction
+L 9073a8,8 hit
+S 787940,8 miss eviction
+L 9073b0,8 hit
+S 787a40,8 miss eviction
+L 9073b8,8 hit
+S 787b40,8 miss eviction
+L 708c80,8 miss eviction
+S 787448,8 hit
+L 708c88,8 hit
+S 787548,8 hit
+L 708c90,8 hit
+S 787648,8 hit
+L 708c98,8 hit
+S 787748,8 hit
+L 708ca0,8 hit
+S 787848,8 hit
+L 708ca8,8 hit
+S 787948,8 hit
+L 708cb0,8 hit
+S 787a48,8 hit
+L 708cb8,8 hit
+S 787b48,8 hit
+L 708d80,8 miss eviction
+S 787450,8 hit
+L 708d88,8 hit
+S 787550,8 hit
+L 708d90,8 hit
+S 787650,8 hit
+L 708d98,8 hit
+S 787750,8 hit
+L 708da0,8 hit
+S 787850,8 hit
+L 708da8,8 hit
+S 787950,8 hit
+L 708db0,8 hit
+S 787a50,8 hit
+L 708db8,8 hit
+S 787b50,8 hit
+L 708e80,8 miss eviction
+S 787458,8 hit
+L 708e88,8 hit
+S 787558,8 hit
+L 708e90,8 hit
+S 787658,8 hit
+L 708e98,8 hit
+S 787758,8 hit
+L 708ea0,8 hit
+S 787858,8 hit
+L 708ea8,8 hit
+S 787958,8 hit
+L 708eb0,8 hit
+S 787a58,8 hit
+L 708eb8,8 hit
+S 787b58,8 hit
+L 708f80,8 miss eviction
+S 787460,8 hit
+L 708f88,8 hit
+S 787560,8 hit
+L 708f90,8 hit
+S 787660,8 hit
+L 708f98,8 hit
+S 787760,8 hit
+L 708fa0,8 hit
+S 787860,8 hit
+L 708fa8,8 hit
+S 787960,8 hit
+L 708fb0,8 hit
+S 787a60,8 hit
+L 708fb8,8 hit
+S 787b60,8 hit
+L 709080,8 miss eviction
+S 787468,8 hit
+L 709088,8 hit
+S 787568,8 hit
+L 709090,8 hit
+S 787668,8 hit
+L 709098,8 hit
+S 787768,8 hit
+L 7090a0,8 hit
+S 787868,8 hit
+L 7090a8,8 hit
+S 787968,8 hit
+L 7090b0,8 hit
+S 787a68,8 hit
+L 7090b8,8 hit
+S 787b68,8 hit
+L 709180,8 miss eviction
+S 787470,8 hit
+L 709188,8 hit
+S 787570,8 hit
+L 709190,8 hit
+S 787670,8 hit
+L 709198,8 hit
+S 787770,8 hit
+L 7091a0,8 hit
+S 787870,8 hit
+L 7091a8,8 hit
+S 787970,8 hit
+L 7091b0,8 hit
+S 787a70,8 hit
+L 7091b8,8 hit
+S 787b70,8 hit
+L 709280,8 miss eviction
+S 787478,8 hit
+L 709288,8 hit
+S 787578,8 hit
+L 709290,8 hit
+S 787678,8 hit
+L 709298,8 hit
+S 787778,8 hit
+L 7092a0,8 hit
+S 787878,8 hit
+L 7092a8,8 hit
+S 787978,8 hit
+L 7092b0,8 hit
+S 787a78,8 hit
+L 7092b8,8 hit
+S 787b78,8 hit
+L 708bc0,8 miss eviction
+S 907380,8 hit
+L 708bc8,8 hit
+S 907388,8 hit
+L 708bd0,8 hit
+S 907390,8 hit
+L 708bd8,8 hit
+S 907398,8 hit
+L 708be0,8 hit
+S 9073a0,8 hit
+L 708be8,8 hit
+S 9073a8,8 hit
+L 708bf0,8 hit
+S 9073b0,8 hit
+L 708bf8,8 hit
+S 9073b8,8 hit
+L 907380,8 hit
+S 787c40,8 miss eviction
+L 907388,8 hit
+S 787d40,8 miss eviction
+L 907390,8 hit
+S 787e40,8 miss eviction
+L 907398,8 hit
+S 787f40,8 miss eviction
+L 9073a0,8 hit
+S 788040,8 miss eviction
+L 9073a8,8 hit
+S 788140,8 miss eviction
+L 9073b0,8 hit
+S 788240,8 miss eviction
+L 9073b8,8 hit
+S 788340,8 miss eviction
+L 708cc0,8 miss eviction
+S 787c48,8 hit
+L 708cc8,8 hit
+S 787d48,8 hit
+L 708cd0,8 hit
+S 787e48,8 hit
+L 708cd8,8 hit
+S 787f48,8 hit
+L 708ce0,8 hit
+S 788048,8 hit
+L 708ce8,8 hit
+S 788148,8 hit
+L 708cf0,8 hit
+S 788248,8 hit
+L 708cf8,8 hit
+S 788348,8 hit
+L 708dc0,8 miss eviction
+S 787c50,8 hit
+L 708dc8,8 hit
+S 787d50,8 hit
+L 708dd0,8 hit
+S 787e50,8 hit
+L 708dd8,8 hit
+S 787f50,8 hit
+L 708de0,8 hit
+S 788050,8 hit
+L 708de8,8 hit
+S 788150,8 hit
+L 708df0,8 hit
+S 788250,8 hit
+L 708df8,8 hit
+S 788350,8 hit
+L 708ec0,8 miss eviction
+S 787c58,8 hit
+L 708ec8,8 hit
+S 787d58,8 hit
+L 708ed0,8 hit
+S 787e58,8 hit
+L 708ed8,8 hit
+S 787f58,8 hit
+L 708ee0,8 hit
+S 788058,8 hit
+L 708ee8,8 hit
+S 788158,8 hit
+L 708ef0,8 hit
+S 788258,8 hit
+L 708ef8,8 hit
+S 788358,8 hit
+L 708fc0,8 miss eviction
+S 787c60,8 hit
+L 708fc8,8 hit
+S 787d60,8 hit
+L 708fd0,8 hit
+S 787e60,8 hit
+L 708fd8,8 hit
+S 787f60,8 hit
+L 708fe0,8 hit
+S 788060,8 hit
+L 708fe8,8 hit
+S 788160,8 hit
+L 708ff0,8 hit
+S 788260,8 hit
+L 708ff8,8 hit
+S 788360,8 hit
+L 7090c0,8 miss eviction
+S 787c68,8 hit
+L 7090c8,8 hit
+S 787d68,8 hit
+L 7090d0,8 hit
+S 787e68,8 hit
+L 7090d8,8 hit
+S 787f68,8 hit
+L 7090e0,8 hit
+S 788068,8 hit
+L 7090e8,8 hit
+S 788168,8 hit
+L 7090f0,8 hit
+S 788268,8 hit
+L 7090f8,8 hit
+S 788368,8 hit
+L 7091c0,8 miss eviction
+S 787c70,8 hit
+L 7091c8,8 hit
+S 787d70,8 hit
+L 7091d0,8 hit
+S 787e70,8 hit
+L 7091d8,8 hit
+S 787f70,8 hit
+L 7091e0,8 hit
+S 788070,8 hit
+L 7091e8,8 hit
+S 788170,8 hit
+L 7091f0,8 hit
+S 788270,8 hit
+L 7091f8,8 hit
+S 788370,8 hit
+L 7092c0,8 miss eviction
+S 787c78,8 hit
+L 7092c8,8 hit
+S 787d78,8 hit
+L 7092d0,8 hit
+S 787e78,8 hit
+L 7092d8,8 hit
+S 787f78,8 hit
+L 7092e0,8 hit
+S 788078,8 hit
+L 7092e8,8 hit
+S 788178,8 hit
+L 7092f0,8 hit
+S 788278,8 hit
+L 7092f8,8 hit
+S 788378,8 hit
+L 708c00,8 miss eviction
+S 907380,8 hit
+L 708c08,8 hit
+S 907388,8 hit
+L 708c10,8 hit
+S 907390,8 hit
+L 708c18,8 hit
+S 907398,8 hit
+L 708c20,8 hit
+S 9073a0,8 hit
+L 708c28,8 hit
+S 9073a8,8 hit
+L 708c30,8 hit
+S 9073b0,8 hit
+L 708c38,8 hit
+S 9073b8,8 hit
+L 907380,8 hit
+S 788440,8 miss eviction
+L 907388,8 hit
+S 788540,8 miss eviction
+L 907390,8 hit
+S 788640,8 miss eviction
+L 907398,8 hit
+S 788740,8 miss eviction
+L 9073a0,8 hit
+S 788840,8 miss eviction
+L 9073a8,8 hit
+S 788940,8 miss eviction
+L 9073b0,8 hit
+S 788a40,8 miss eviction
+L 9073b8,8 hit
+S 788b40,8 miss eviction
+L 708d00,8 miss eviction
+S 788448,8 hit
+L 708d08,8 hit
+S 788548,8 hit
+L 708d10,8 hit
+S 788648,8 hit
+L 708d18,8 hit
+S 788748,8 hit
+L 708d20,8 hit
+S 788848,8 hit
+L 708d28,8 hit
+S 788948,8 hit
+L 708d30,8 hit
+S 788a48,8 hit
+L 708d38,8 hit
+S 788b48,8 hit
+L 708e00,8 miss eviction
+S 788450,8 hit
+L 708e08,8 hit
+S 788550,8 hit
+L 708e10,8 hit
+S 788650,8 hit
+L 708e18,8 hit
+S 788750,8 hit
+L 708e20,8 hit
+S 788850,8 hit
+L 708e28,8 hit
+S 788950,8 hit
+L 708e30,8 hit
+S 788a50,8 hit
+L 708e38,8 hit
+S 788b50,8 hit
+L 708f00,8 miss eviction
+S 788458,8 hit
+L 708f08,8 hit
+S 788558,8 hit
+L 708f10,8 hit
+S 788658,8 hit
+L 708f18,8 hit
+S 788758,8 hit
+L 708f20,8 hit
+S 788858,8 hit
+L 708f28,8 hit
+S 788958,8 hit
+L 708f30,8 hit
+S 788a58,8 hit
+L 708f38,8 hit
+S 788b58,8 hit
+L 709000,8 miss eviction
+S 788460,8 hit
+L 709008,8 hit
+S 788560,8 hit
+L 709010,8 hit
+S 788660,8 hit
+L 709018,8 hit
+S 788760,8 hit
+L 709020,8 hit
+S 788860,8 hit
+L 709028,8 hit
+S 788960,8 hit
+L 709030,8 hit
+S 788a60,8 hit
+L 709038,8 hit
+S 788b60,8 hit
+L 709100,8 miss eviction
+S 788468,8 hit
+L 709108,8 hit
+S 788568,8 hit
+L 709110,8 hit
+S 788668,8 hit
+L 709118,8 hit
+S 788768,8 hit
+L 709120,8 hit
+S 788868,8 hit
+L 709128,8 hit
+S 788968,8 hit
+L 709130,8 hit
+S 788a68,8 hit
+L 709138,8 hit
+S 788b68,8 hit
+L 709200,8 miss eviction
+S 788470,8 hit
+L 709208,8 hit
+S 788570,8 hit
+L 709210,8 hit
+S 788670,8 hit
+L 709218,8 hit
+S 788770,8 hit
+L 709220,8 hit
+S 788870,8 hit
+L 709228,8 hit
+S 788970,8 hit
+L 709230,8 hit
+S 788a70,8 hit
+L 709238,8 hit
+S 788b70,8 hit
+L 709300,8 miss eviction
+S 788478,8 hit
+L 709308,8 hit
+S 788578,8 hit
+L 709310,8 hit
+S 788678,8 hit
+L 709318,8 hit
+S 788778,8 hit
+L 709320,8 hit
+S 788878,8 hit
+L 709328,8 hit
+S 788978,8 hit
+L 709330,8 hit
+S 788a78,8 hit
+L 709338,8 hit
+S 788b78,8 hit
+L 708c40,8 miss eviction
+S 907380,8 hit
+L 708c48,8 hit
+S 907388,8 hit
+L 708c50,8 hit
+S 907390,8 hit
+L 708c58,8 hit
+S 907398,8 hit
+L 708c60,8 hit
+S 9073a0,8 hit
+L 708c68,8 hit
+S 9073a8,8 hit
+L 708c70,8 hit
+S 9073b0,8 hit
+L 708c78,8 hit
+S 9073b8,8 hit
+L 907380,8 hit
+S 788c40,8 miss eviction
+L 907388,8 hit
+S 788d40,8 miss eviction
+L 907390,8 hit
+S 788e40,8 miss eviction
+L 907398,8 hit
+S 788f40,8 miss eviction
+L 9073a0,8 hit
+S 789040,8 miss eviction
+L 9073a8,8 hit
+S 789140,8 miss eviction
+L 9073b0,8 hit
+S 789240,8 miss eviction
+L 9073b8,8 hit
+S 789340,8 miss eviction
+L 708d40,8 miss eviction
+S 788c48,8 hit
+L 708d48,8 hit
+S 9073c0,8 miss eviction
+L 708d50,8 hit
+S 788e48,8 hit
+L 708d58,8 hit
+S 788f48,8 hit
+L 708d60,8 hit
+S 789048,8 hit
+L 708d68,8 hit
+S 789148,8 hit
+L 708d70,8 hit
+S 789248,8 hit
+L 708d78,8 hit
+S 789348,8 hit
+L 9073c0,8 hit
+S 788d48,8 miss eviction
+L 708e40,8 miss eviction
+S 788c50,8 hit
+L 708e48,8 hit
+S 788d50,8 hit
+L 708e50,8 hit
+S 9073c0,8 hit
+L 708e58,8 hit
+S 788f50,8 hit
+L 708e60,8 hit
+S 789050,8 hit
+L 708e68,8 hit
+S 789150,8 hit
+L 708e70,8 hit
+S 789250,8 hit
+L 708e78,8 hit
+S 789350,8 hit
+L 9073c0,8 hit
+S 788e50,8 miss eviction
+L 708f40,8 miss eviction
+S 788c58,8 hit
+L 708f48,8 hit
+S 788d58,8 hit
+L 708f50,8 hit
+S 788e58,8 hit
+L 708f58,8 hit
+S 9073c0,8 hit
+L 708f60,8 hit
+S 789058,8 hit
+L 708f68,8 hit
+S 789158,8 hit
+L 708f70,8 hit
+S 789258,8 hit
+L 708f78,8 hit
+S 789358,8 hit
+L 9073c0,8 hit
+S 788f58,8 miss eviction
+L 709040,8 miss eviction
+S 788c60,8 hit
+L 709048,8 hit
+S 788d60,8 hit
+L 709050,8 hit
+S 788e60,8 hit
+L 709058,8 hit
+S 788f60,8 hit
+L 709060,8 hit
+S 9073c0,8 hit
+L 709068,8 hit
+S 789160,8 hit
+L 709070,8 hit
+S 789260,8 hit
+L 709078,8 hit
+S 789360,8 hit
+L 9073c0,8 hit
+S 789060,8 miss eviction
+L 709140,8 miss eviction
+S 788c68,8 hit
+L 709148,8 hit
+S 788d68,8 hit
+L 709150,8 hit
+S 788e68,8 hit
+L 709158,8 hit
+S 788f68,8 hit
+L 709160,8 hit
+S 789068,8 hit
+L 709168,8 hit
+S 9073c0,8 hit
+L 709170,8 hit
+S 789268,8 hit
+L 709178,8 hit
+S 789368,8 hit
+L 9073c0,8 hit
+S 789168,8 miss eviction
+L 709240,8 miss eviction
+S 788c70,8 hit
+L 709248,8 hit
+S 788d70,8 hit
+L 709250,8 hit
+S 788e70,8 hit
+L 709258,8 hit
+S 788f70,8 hit
+L 709260,8 hit
+S 789070,8 hit
+L 709268,8 hit
+S 789170,8 hit
+L 709270,8 hit
+S 9073c0,8 hit
+L 709278,8 hit
+S 789370,8 hit
+L 9073c0,8 hit
+S 789270,8 miss eviction
+L 709340,8 miss eviction
+S 788c78,8 hit
+L 709348,8 hit
+S 788d78,8 hit
+L 709350,8 hit
+S 788e78,8 hit
+L 709358,8 hit
+S 788f78,8 hit
+L 709360,8 hit
+S 789078,8 hit
+L 709368,8 hit
+S 789178,8 hit
+L 709370,8 hit
+S 789278,8 hit
+L 709378,8 hit
+S 9073c0,8 hit
+L 9073c0,8 hit
+S 789378,8 miss eviction
+hits:1989 misses:371 evictions:339 dirty_bytes_in_cache:640 dirty_bytes_evicted:12864

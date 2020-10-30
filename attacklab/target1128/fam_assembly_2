@@ -1,0 +1,40 @@
+89 c7 c3        movl eax, edi 
+
+89 d1 c3        movl edx, ecx 
+
+89 e0 c3        movl esp, eax
+
+0000000000421ebe <addval_261>:
+  421ebe:	8d 87 87 33 b3 58    	lea    0x58b33387(%rdi),%eax        popq rax
+  421ec4:	c3     
+
+0000000000421ed9 <addval_265>:
+  421ed9:	8d 87 e3 bd f1 58    	lea    0x58f1bde3(%rdi),%eax        popq rax
+  421edf:	c3                   	retq   
+
+
+0000000000421ecc <getval_349>:
+  421ecc:	b8 48 89 c7 c3       	mov    $0xc3c78948,%eax
+  421ed1:	c3                   	retq   
+
+
+mov rsp, rax
+0000000000421f13 <setval_363>:
+  421f13:	c7 07 5b 48 89 e0    	movl   $0xe089485b,(%rdi)
+  421f19:	c3                   	retq 
+
+  0000000000421ecc <getval_349>:
+  421ecc:	b8 48 89 c7 c3       	mov    $0xc3c78948,%eax
+  421ed1:	c3                   	retq   
+
+
+movl edx, ecx
+0000000000421f51 <addval_237>:
+  421f51:	8d 87 89 d1 08 db    	lea    -0x24f72e77(%rdi),%eax
+  421f57:	c3                   	retq   
+
+
+movl ecx, esi 
+0000000000421f58 <getval_421>:
+  421f58:	b8 89 ce 08 db       	mov    $0xdb08ce89,%eax
+  421f5d:	c3                   	retq   

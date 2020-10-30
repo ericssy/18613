@@ -1,0 +1,12 @@
+0000000000421e94 <test>:
+  421e94:	48 83 ec 08          	sub    $0x8,%rsp
+  421e98:	b8 00 00 00 00       	mov    $0x0,%eax
+  421e9d:	e8 78 fe ff ff       	callq  421d1a <getbuf>
+  421ea2:	89 c6                	mov    %eax,%esi
+  421ea4:	bf 38 39 42 00       	mov    $0x423938,%edi
+  421ea9:	b8 00 00 00 00       	mov    $0x0,%eax
+  421eae:	e8 ad ee fd ff       	callq  400d60 <printf@plt>
+  421eb3:	48 83 c4 08          	add    $0x8,%rsp
+  421eb7:	c3                   	retq   
+  421eb8:	0f 1f 84 00 00 00 00 	nopl   0x0(%rax,%rax,1)
+  421ebf:	00 
